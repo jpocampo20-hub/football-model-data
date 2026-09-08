@@ -1,16 +1,3 @@
-"""
-Script para el robot de GitHub Actions: baja partidos de las 5 ligas top +
-Champions League desde la API gratuita de football-data.org, y los guarda
-en fixtures.csv. Pensado para correr solo, una vez por semana, sin
-intervencion manual.
-
-Necesita la variable de entorno FOOTBALL_DATA_TOKEN (se configura como
-"Secret" en GitHub, nunca se escribe la clave acá directamente).
-
-Nota: el endpoint correcto para filtrar por fecha es POR LIGA
-(/v4/competitions/{codigo}/matches?dateFrom=...&dateTo=...) -- el endpoint
-generico /v4/matches no acepta un parametro "competitions" para esto.
-"""
 import csv
 import datetime
 import json
@@ -19,50 +6,49 @@ import time
 import urllib.error
 import urllib.request
 
-TOKEN = os.environ["FOOTBALL_DATA_TOKEN"]
+TOKEN = os.environ.get("FOOTBALL_DATA_TOKEN", "")
 
 # PL=Premier League, PD=La Liga, BL1=Bundesliga, SA=Serie A, FL1=Ligue 1, CL=Champions League
 COMPETITIONS = ["PL", "PD", "BL1", "SA", "FL1", "CL"]
 BASE_URL = "https://api.football-data.org/v4/competitions"
 
-# ventana amplia: partidos recientes (para tener resultados ya jugados)
-# + proximos (para saber cuando juega cada equipo, aunque todavia no tenga resultado)
 date_from = (datetime.date.today() - datetime.timedelta(days=45)).isoformat()
 date_to = (datetime.date.today() + datetime.timedelta(days=21)).isoformat()
 
 rows = []
-for comp in COMPETITIONS:
-    url = f"{BASE_URL}/{comp}/matches?dateFrom={date_from}&dateTo={date_to}"
-    req = urllib.request.Request(url, headers={"X-Auth-Token": TOKEN})
-    try:
-        with urllib.request.urlopen(req) as resp:
-            data = json.load(resp)
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="replace")
-        print(f"Error pidiendo {comp}: HTTP {e.code} -- {body}")
-        continue
-    except Exception as e:
-        print(f"Error pidiendo {comp}: {e}")
-        continue
 
-    for m in data.get("matches", []):
-        rows.append({
-            "competition": comp,
-            "date": m["utcDate"][:10],
-            "home_team": m["homeTeam"]["name"],
-            "away_team": m["awayTeam"]["name"],
-            "status": m["status"],
-            "home_score": m["score"]["fullTime"]["home"],
-            "away_score": m["score"]["fullTime"]["away"],
-        })
+if not TOKEN:
+    print("⚠️ No se encontró la variable FOOTBALL_DATA_TOKEN")
+else:
+    for comp in COMPETITIONS:
+        url = f"{BASE_URL}/{comp}/matches?dateFrom={date_from}&dateTo={date_to}"
+        req = urllib.request.Request(url, headers={"X-Auth-Token": TOKEN})
+        try:
+            with urllib.request.urlopen(req) as resp:
+                data = json.load(resp)
+                for m in data.get("matches", []):
+                    rows.append({
+                        "competition": comp,
+                        "date": m["utcDate"][:10],
+                        "home_team": m["homeTeam"]["name"],
+                        "away_team": m["awayTeam"]["name"],
+                        "status": m["status"],
+                        "home_score": m["score"]["fullTime"]["home"],
+                        "away_score": m["score"]["fullTime"]["away"],
+                    })
+                print(f"✅ Liga {comp}: procesada correctamente.")
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="replace")
+            print(f"Error pidiendo {comp}: HTTP {e.code} -- {body}")
+        except Exception as e:
+            print(f"Error pidiendo {comp}: {e}")
 
-    time.sleep(7)  # limite gratuito: 10 pedidos por minuto, esto lo respeta con margen
+        time.sleep(7)  # Limite gratuito: 10 pedidos por minuto
 
 with open("fixtures.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(
         f,
-        fieldnames=["competition", "date", "home_team", "away_team",
-                    "status", "home_score", "away_score"],
+        fieldnames=["competition", "date", "home_team", "away_team", "status", "home_score", "away_score"],
     )
     writer.writeheader()
     writer.writerows(rows)
