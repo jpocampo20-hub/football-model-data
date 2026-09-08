@@ -1,64 +1,66 @@
 import pandas as pd
 import soccerdata as sd
 
-# Ligas soportadas en Understat vía soccerdata
-LIGAS = [
-    "ESP-La Liga",
+print("Iniciando extracción de métricas avanzadas (xG) desde Understat...")
+
+LEAGUES = [
     "ENG-Premier League",
+    "ESP-La Liga",
     "GER-Bundesliga",
     "ITA-Serie A",
     "FRA-Ligue 1",
 ]
 
-print("Iniciando extracción de métricas avanzadas (xG, PPDA) con Understat...")
-
+# Usamos la temporada 2024/2025 o 2025/2026 para asegurar partidos ya jugados con datos
 try:
-    # Cargar datos de la temporada actual
-    understat = sd.Understat(leagues=LIGAS, seasons="2025")
+    understat = sd.Understat(leagues=LEAGUES, seasons="2024")
 
-    # Leer estadísticas por partido de los equipos
-    team_match_stats = understat.read_team_match_stats()
-    team_match_stats = team_match_stats.reset_index()
+    # read_match_data() trae los datos reales de xG, tiros y goles de cada partido jugados
+    match_data = understat.read_match_data()
 
-    # Seleccionar métricas avanzadas clave para el modelo
-    cols_interes = [
+    if not match_data.empty:
+        df_metrics = match_data.reset_index()
+
+        # Seleccionamos las columnas clave de xG y rendimiento
+        columns_to_keep = [
+            "league",
+            "season",
+            "date",
+            "home_team",
+            "away_team",
+            "home_score",
+            "away_score",
+            "home_xg",
+            "away_xg",
+            "forecast_win",
+            "forecast_draw",
+            "forecast_loss",
+        ]
+
+        # Filtrar solo las columnas disponibles
+        existing_cols = [c for c in columns_to_keep if c in df_metrics.columns]
+        df_final = df_metrics[existing_cols]
+
+        df_final.to_csv("understat_metrics.csv", index=False, encoding="utf-8")
+        print(
+            f"✅ Guardadas {len(df_final)} filas con métricas xG en understat_metrics.csv"
+        )
+    else:
+        print("⚠️ No se encontraron partidos jugados con métricas de xG.")
+
+except Exception as e:
+    print(f"⚠️ Error extrayendo métricas de Understat: {e}")
+
+    # Fallback técnico para mantener la resiliencia en GitHub Actions
+    fallback_cols = [
         "league",
         "season",
         "date",
         "home_team",
         "away_team",
-        "xg",
-        "xga",
-        "npxg",
-        "npxga",
-        "ppda",
-        "ppda_allowed",
-        "deep",
-        "deep_allowed",
+        "home_score",
+        "away_score",
+        "home_xg",
+        "away_xg",
     ]
-
-    # Filtrar columnas disponibles
-    cols_disponibles = [
-        c for c in cols_interes if c in team_match_stats.columns
-    ]
-    df_understat = team_match_stats[cols_disponibles].copy()
-
-    df_understat.to_csv("understat_metrics.csv", index=False, encoding="utf-8")
-    print(
-        f"✅ Guardadas métricas avanzadas de {len(df_understat)} partidos en understat_metrics.csv"
-    )
-
-except Exception as e:
-    print(f"❌ Error al extraer datos de Understat: {e}")
-    # Generar CSV vacío seguro en caso de fallo
-    pd.DataFrame(
-        columns=[
-            "league",
-            "date",
-            "home_team",
-            "away_team",
-            "xg",
-            "xga",
-            "ppda",
-        ]
-    ).to_csv("understat_metrics.csv", index=False)
+    pd.DataFrame(columns=fallback_cols).to_csv("understat_metrics.csv", index=False)
