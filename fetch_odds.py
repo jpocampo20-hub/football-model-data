@@ -2,12 +2,11 @@ import csv
 import io
 import urllib.request
 
-# Códigos de ligas en Football-Data.co.uk para la temporada 2025-2026
-# E0=Premier League, SP1=La Liga, D1=Bundesliga, I1=Serie A, F1=Ligue 1
 LEAGUES = ["E0", "SP1", "D1", "I1", "F1"]
-BASE_URL = "https://www.football-data.co.uk/mmz4281/2526"
+# Temporada 2026-2027 en Football-Data
+BASE_URL = "https://www.football-data.co.uk/mmz4281/2627"
 
-print("Iniciando descarga de cuotas de apuestas...")
+print("Iniciando descarga de cuotas de apuestas (Temporada 2026-2027)...")
 
 all_rows = []
 fieldnames = [
@@ -37,16 +36,18 @@ for league in LEAGUES:
     print(f"Descargando cuotas para {league} desde {url}...")
     try:
         req = urllib.request.Request(
-            url, headers={"User-Agent": "Mozilla/5.0"}
+            url,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            },
         )
         with urllib.request.urlopen(req) as resp:
             content = resp.read().decode("utf-8", errors="replace")
             reader = csv.DictReader(io.StringIO(content))
 
             for row in reader:
-                # Extraer solo las columnas relevantes de cuotas y resultados
                 extracted = {k: row.get(k, "") for k in fieldnames}
-                if extracted["HomeTeam"] and extracted["Date"]:
+                if extracted.get("HomeTeam") and extracted.get("Date"):
                     all_rows.append(extracted)
             print(f"✅ {league}: {len(all_rows)} partidos procesados.")
     except Exception as e:
