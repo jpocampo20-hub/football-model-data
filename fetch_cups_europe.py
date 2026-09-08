@@ -1,110 +1,74 @@
-import csv
 import datetime
-import json
 import os
-import time
-import urllib.parse
-import urllib.request
+import pandas as pd
+import soccerdata as sd
 
-API_KEY = os.environ.get("APIFOOTBALL_KEY", "")
-BASE = "https://v3.football.api-sports.io"
+# Lista ampliada de copas locales, secundarias y torneos de copa en las 5 ligas top
+COPAS = [
+    "ENG-FA Cup",
+    "ENG-EFL Cup",        # Carabao Cup / League Cup
+    "ESP-Copa del Rey",
+    "GER-DFB Pokal",
+    "ITA-Coppa Italia",
+    "FRA-Coupe de France",
+]
 
-HEADERS = {
-    "x-apisports-key": API_KEY,
-    "x-rapidapi-host": "v3.football.api-sports.io",
-}
+print("Iniciando extracción de copas locales y EFL Cup con soccerdata (FBref)...")
 
-# IDs oficiales confirmados en API-Football
-COMPETITIONS = {
-    "FA Cup": 45,
-    "Copa del Rey": 143,
-    "DFB Pokal": 529,
-    "Coppa Italia": 137,
-    "Coupe de France": 66,
-    "UEFA Europa League": 3,
-    "UEFA Conference League": 848,
-}
+try:
+    # Cargar datos de la temporada actual 2026
+    fbref = sd.FBref(leagues=COPAS, seasons="2026")
+    schedule = fbref.read_schedule()
+    schedule = schedule.reset_index()
 
-# Año de inicio de la temporada actual (ej. 2025 para la temporada 2025-2026)
-SEASON = 2025
+    cols_rename = {
+        "league": "competition",
+        "date": "date",
+        "home_team": "home_team",
+        "away_team": "away_team",
+        "home_g": "home_score",
+        "away_g": "away_score",
+    }
 
-date_from = (datetime.date.today() - datetime.timedelta(days=60)).isoformat()
-date_to = (datetime.date.today() + datetime.timedelta(days=45)).isoformat()
+    # Mapeo para nombres más limpios en el CSV final
+    nombre_limpio = {
+        "ENG-FA Cup": "FA Cup",
+        "ENG-EFL Cup": "Carabao Cup",
+        "ESP-Copa del Rey": "Copa del Rey",
+        "GER-DFB Pokal": "DFB Pokal",
+        "ITA-Coppa Italia": "Coppa Italia",
+        "FRA-Coupe de France": "Coupe de France",
+    }
 
+    df_cups = schedule[list(cols_rename.keys())].rename(columns=cols_rename)
+    df_cups["competition"] = df_cups["competition"].map(lambda x: nombre_limpio.get(x, x))
 
-def api_get(path, params):
-    query = urllib.parse.urlencode(params)
-    url = f"{BASE}/{path}?{query}"
-    req = urllib.request.Request(url, headers=HEADERS)
-    try:
-        with urllib.request.urlopen(req) as resp:
-            data = json.load(resp)
+    df_cups["date"] = pd.to_datetime(df_cups["date"])
+    hoy = pd.Timestamp(datetime.date.today())
 
-            # Imprimir advertencias o errores devueltos en el JSON por la API
-            if data.get("errors"):
-                print(f"⚠️ Advertencia de API-Football ({path}): {data['errors']}")
-            return data
-    except Exception as e:
-        print(f"❌ Error HTTP/Red pidiendo {path}: {e}")
-        return None
+    # Rango de tiempo para incluir partidos recientes y próximos partidos
+    fecha_inicio = hoy - pd.Timedelta(days=60)
+    fecha_fin = hoy + pd.Timedelta(days=30)
 
+    df_filtrado = df_cups[
+        (df_cups["date"] >= fecha_inicio) & (df_cups["date"] <= fecha_fin)
+    ].copy()
 
-rows = []
-
-for name, league_id in COMPETITIONS.items():
-    print(f"Consultando {name} (ID: {league_id})...")
-
-    # Intentar primero filtrando por el rango de fechas ampliado
-    data = api_get(
-        "fixtures",
-        {
-            "league": league_id,
-            "season": SEASON,
-            "from": date_from,
-            "to": date_to,
-        },
+    df_filtrado["date"] = df_filtrado["date"].dt.strftime("%Y-%m-%d")
+    
+    # Asignar estado del partido según si ya tiene marcador registrado
+    df_filtrado["status"] = df_filtrado["home_score"].apply(
+        lambda x: "FINISHED" if pd.notnull(x) else "SCHEDULED"
     )
 
-    matches = data.get("response", []) if data else []
+    df_filtrado.to_csv("cups_europe.csv", index=False, encoding="utf-8")
+    print(f"✅ Guardados {len(df_filtrado)} partidos de copas (incluida Carabao Cup) en cups_europe.csv")
 
-    # RECURSO DE RESPALDO: Si no hay partidos en esas fechas, traer los partidos de toda la temporada
-    if not matches:
-        print(
-            f"   No hubo partidos cercanos para {name}. Pidiendo temporada completa..."
-        )
-        data = api_get("fixtures", {"league": league_id, "season": SEASON})
-        matches = data.get("response", []) if data else []
-
-    print(f"   Encontrados {len(matches)} partidos para {name}")
-
-    for m in matches:
-        rows.append(
-            {
-                "competition": name,
-                "date": m["fixture"]["date"][:10],
-                "home_team": m["teams"]["home"]["name"],
-                "away_team": m["teams"]["away"]["name"],
-                "status": m["fixture"]["status"]["short"],
-                "home_score": (
-                    m["goals"]["home"]
-                    if m["goals"]["home"] is not None
-                    else ""
-                ),
-                "away_score": (
-                    m["goals"]["away"]
-                    if m["goals"]["away"] is not None
-                    else ""
-                ),
-            }
-        )
-
-    time.sleep(1.2)  # Respetar rate limits de la API
-
-# Guardar resultados en el CSV
-with open("cups_europe.csv", "w", newline="", encoding="utf-8") as f:
-    writer = csv.DictWriter(
-        f,
-        fieldnames=[
+except Exception as e:
+    print(f"❌ Error durante la extracción de copas con soccerdata: {e}")
+    # Genera un CSV vacío válido con estructura adecuada si ocurre algún imprevisto
+    pd.DataFrame(
+        columns=[
             "competition",
             "date",
             "home_team",
@@ -112,9 +76,5 @@ with open("cups_europe.csv", "w", newline="", encoding="utf-8") as f:
             "status",
             "home_score",
             "away_score",
-        ],
-    )
-    writer.writeheader()
-    writer.writerows(rows)
-
-print(f"\n✅ Proceso finalizado: Guardados {len(rows)} partidos en cups_europe.csv")
+        ]
+    ).to_csv("cups_europe.csv", index=False)
