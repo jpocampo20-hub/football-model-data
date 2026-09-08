@@ -1,1 +1,1753 @@
-league,season,game_id,date,home_team,away_team,score,notes
+competition,date,home_team,away_team,home_score,away_score,status
+ENG-Premier League,2026-08-21 19:00:00,Arsenal,Coventry,,,SCHEDULED
+ENG-Premier League,2026-08-22 16:30:00,Brentford,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-08-22 14:00:00,Everton,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-08-22 11:30:00,Hull,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-08-22 14:00:00,Ipswich,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-08-22 14:00:00,Nottingham Forest,Leeds,,,SCHEDULED
+ENG-Premier League,2026-08-23 13:00:00,Brighton,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-08-23 13:00:00,Manchester City,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-08-23 15:30:00,Newcastle United,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-08-24 19:00:00,Fulham,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-08-28 19:00:00,Crystal Palace,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-08-29 14:00:00,Bournemouth,Everton,,,SCHEDULED
+ENG-Premier League,2026-08-29 14:00:00,Coventry,Hull,,,SCHEDULED
+ENG-Premier League,2026-08-29 11:30:00,Liverpool,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-08-29 16:30:00,Tottenham,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-08-30 13:00:00,Chelsea,Brighton,,,SCHEDULED
+ENG-Premier League,2026-08-30 13:00:00,Leeds,Brentford,,,SCHEDULED
+ENG-Premier League,2026-08-30 15:30:00,Manchester United,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-08-30 13:00:00,Sunderland,Fulham,,,SCHEDULED
+ENG-Premier League,2026-08-31 19:00:00,Aston Villa,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-09-04 19:00:00,Ipswich,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-09-05 14:00:00,Brentford,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-09-05 14:00:00,Brighton,Leeds,,,SCHEDULED
+ENG-Premier League,2026-09-05 14:00:00,Fulham,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-09-05 16:30:00,Hull,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-09-05 14:00:00,Manchester City,Coventry,,,SCHEDULED
+ENG-Premier League,2026-09-05 11:30:00,Newcastle United,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-09-05 14:00:00,Nottingham Forest,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-09-06 15:30:00,Arsenal,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-09-06 13:00:00,Everton,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-09-12 14:00:00,Aston Villa,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-09-12 14:00:00,Bournemouth,Brentford,,,SCHEDULED
+ENG-Premier League,2026-09-12 14:00:00,Chelsea,Hull,,,SCHEDULED
+ENG-Premier League,2026-09-12 14:00:00,Crystal Palace,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-09-12 14:00:00,Liverpool,Fulham,,,SCHEDULED
+ENG-Premier League,2026-09-12 19:00:00,Sunderland,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-09-12 16:30:00,Tottenham,Everton,,,SCHEDULED
+ENG-Premier League,2026-09-13 13:00:00,Coventry,Brighton,,,SCHEDULED
+ENG-Premier League,2026-09-13 15:30:00,Manchester United,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-09-14 19:00:00,Leeds,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-09-18 19:00:00,Brentford,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-09-19 14:00:00,Brighton,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-09-19 14:00:00,Everton,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-09-19 14:00:00,Leeds,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-09-19 14:00:00,Manchester City,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-09-19 14:00:00,Newcastle United,Hull,,,SCHEDULED
+ENG-Premier League,2026-09-19 16:30:00,Nottingham Forest,Coventry,,,SCHEDULED
+ENG-Premier League,2026-09-19 11:30:00,Tottenham,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-09-20 13:00:00,Bournemouth,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-09-20 15:30:00,Fulham,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-10-10 11:30:00,Arsenal,Leeds,,,SCHEDULED
+ENG-Premier League,2026-10-10 14:00:00,Aston Villa,Brentford,,,SCHEDULED
+ENG-Premier League,2026-10-10 14:00:00,Chelsea,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-10-10 14:00:00,Ipswich,Fulham,,,SCHEDULED
+ENG-Premier League,2026-10-10 16:30:00,Manchester United,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-10-10 14:00:00,Sunderland,Brighton,,,SCHEDULED
+ENG-Premier League,2026-10-11 13:00:00,Crystal Palace,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-10-11 13:00:00,Hull,Everton,,,SCHEDULED
+ENG-Premier League,2026-10-11 15:30:00,Liverpool,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-10-12 19:00:00,Coventry,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-10-17 14:00:00,Brentford,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-10-17 11:30:00,Everton,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-10-17 14:00:00,Fulham,Hull,,,SCHEDULED
+ENG-Premier League,2026-10-17 14:00:00,Manchester City,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-10-17 16:30:00,Newcastle United,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-10-18 13:00:00,Bournemouth,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-10-18 13:00:00,Brighton,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-10-18 13:00:00,Leeds,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-10-18 15:30:00,Nottingham Forest,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-10-19 19:00:00,Tottenham,Coventry,,,SCHEDULED
+ENG-Premier League,2026-10-23 19:00:00,Ipswich,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-10-24 14:00:00,Arsenal,Everton,,,SCHEDULED
+ENG-Premier League,2026-10-24 11:30:00,Aston Villa,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-10-24 16:30:00,Chelsea,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-10-24 14:00:00,Coventry,Fulham,,,SCHEDULED
+ENG-Premier League,2026-10-24 14:00:00,Liverpool,Brighton,,,SCHEDULED
+ENG-Premier League,2026-10-25 14:00:00,Crystal Palace,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-10-25 14:00:00,Hull,Brentford,,,SCHEDULED
+ENG-Premier League,2026-10-25 14:00:00,Manchester United,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-10-25 16:30:00,Sunderland,Leeds,,,SCHEDULED
+ENG-Premier League,2026-10-31 15:00:00,Bournemouth,Leeds,,,SCHEDULED
+ENG-Premier League,2026-10-31 15:00:00,Brentford,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-10-31 12:30:00,Chelsea,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-10-31 15:00:00,Coventry,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-10-31 15:00:00,Hull,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-10-31 15:00:00,Manchester City,Brighton,,,SCHEDULED
+ENG-Premier League,2026-10-31 17:30:00,Tottenham,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-11-01 14:00:00,Aston Villa,Fulham,,,SCHEDULED
+ENG-Premier League,2026-11-01 16:30:00,Liverpool,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-11-02 20:00:00,Newcastle United,Everton,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Arsenal,Hull,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Brighton,Brentford,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Crystal Palace,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Everton,Coventry,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Fulham,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Ipswich,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Leeds,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Manchester United,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Nottingham Forest,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-11-07 15:00:00,Sunderland,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Aston Villa,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Bournemouth,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Brentford,Everton,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Chelsea,Leeds,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Coventry,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Hull,Brighton,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Liverpool,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Manchester City,Fulham,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Newcastle United,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-11-21 15:00:00,Tottenham,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Arsenal,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Brighton,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Crystal Palace,Hull,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Everton,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Fulham,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Ipswich,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Leeds,Coventry,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Manchester United,Brentford,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Nottingham Forest,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-11-28 15:00:00,Sunderland,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Aston Villa,Everton,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Bournemouth,Brighton,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Brentford,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Chelsea,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Coventry,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Hull,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Liverpool,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Manchester City,Leeds,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Newcastle United,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-12-02 20:00:00,Tottenham,Fulham,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Aston Villa,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Bournemouth,Hull,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Brentford,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Chelsea,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Everton,Fulham,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Leeds,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Manchester United,Coventry,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Newcastle United,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Nottingham Forest,Brighton,,,SCHEDULED
+ENG-Premier League,2026-12-05 15:00:00,Tottenham,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Arsenal,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Brighton,Everton,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Coventry,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Crystal Palace,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Fulham,Brentford,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Hull,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Ipswich,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Liverpool,Leeds,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Manchester City,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-12-12 15:00:00,Sunderland,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Arsenal,Manchester United,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Bournemouth,Coventry,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Brentford,Newcastle United,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Brighton,Ipswich,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Chelsea,Aston Villa,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Leeds,Fulham,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Liverpool,Tottenham,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Manchester City,Hull,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Nottingham Forest,Everton,,,SCHEDULED
+ENG-Premier League,2026-12-19 15:00:00,Sunderland,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Aston Villa,Leeds,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Coventry,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Crystal Palace,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Everton,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Fulham,Brighton,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Hull,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Ipswich,Brentford,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Manchester United,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Newcastle United,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-12-26 15:00:00,Tottenham,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Aston Villa,Liverpool,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Coventry,Brentford,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Crystal Palace,Bournemouth,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Everton,Manchester City,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Fulham,Arsenal,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Hull,Leeds,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Ipswich,Chelsea,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Manchester United,Sunderland,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Newcastle United,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2026-12-30 20:00:00,Tottenham,Brighton,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Arsenal,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Bournemouth,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Brentford,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Brighton,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Chelsea,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Leeds,Everton,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Liverpool,Coventry,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Manchester City,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Nottingham Forest,Fulham,,,SCHEDULED
+ENG-Premier League,2027-01-02 15:00:00,Sunderland,Hull,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Arsenal,Brentford,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Brighton,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Crystal Palace,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Everton,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Fulham,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Ipswich,Coventry,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Leeds,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Manchester United,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Nottingham Forest,Hull,,,SCHEDULED
+ENG-Premier League,2027-01-06 20:00:00,Sunderland,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Aston Villa,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Bournemouth,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Brentford,Brighton,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Chelsea,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Coventry,Everton,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Hull,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Liverpool,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Manchester City,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Newcastle United,Fulham,,,SCHEDULED
+ENG-Premier League,2027-01-16 15:00:00,Tottenham,Leeds,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Arsenal,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Brighton,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Crystal Palace,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Everton,Brentford,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Fulham,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Ipswich,Hull,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Leeds,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Manchester United,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Nottingham Forest,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-01-23 15:00:00,Sunderland,Coventry,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Aston Villa,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Bournemouth,Fulham,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Brentford,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Chelsea,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Coventry,Leeds,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Hull,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Liverpool,Everton,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Manchester City,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Newcastle United,Brighton,,,SCHEDULED
+ENG-Premier League,2027-01-30 15:00:00,Tottenham,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Arsenal,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Brighton,Hull,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Crystal Palace,Coventry,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Everton,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Fulham,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Ipswich,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Leeds,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Manchester United,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Nottingham Forest,Brentford,,,SCHEDULED
+ENG-Premier League,2027-02-06 15:00:00,Sunderland,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Aston Villa,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Coventry,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Crystal Palace,Brentford,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Everton,Leeds,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Fulham,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Hull,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Ipswich,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Manchester United,Brighton,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Newcastle United,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-02-10 20:00:00,Tottenham,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Arsenal,Fulham,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Bournemouth,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Brentford,Coventry,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Brighton,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Chelsea,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Leeds,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Liverpool,Hull,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Manchester City,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Nottingham Forest,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-02-20 15:00:00,Sunderland,Everton,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Aston Villa,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Coventry,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Crystal Palace,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Everton,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Fulham,Leeds,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Hull,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Ipswich,Brighton,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Manchester United,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Newcastle United,Brentford,,,SCHEDULED
+ENG-Premier League,2027-02-27 15:00:00,Tottenham,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Arsenal,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Bournemouth,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Brentford,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Brighton,Fulham,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Chelsea,Coventry,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Leeds,Hull,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Liverpool,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Manchester City,Everton,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Nottingham Forest,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-03-03 20:00:00,Sunderland,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Aston Villa,Hull,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Bournemouth,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Chelsea,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Coventry,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Crystal Palace,Fulham,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Leeds,Brighton,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Liverpool,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Manchester United,Everton,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Sunderland,Brentford,,,SCHEDULED
+ENG-Premier League,2027-03-13 15:00:00,Tottenham,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Arsenal,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Brentford,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Brighton,Coventry,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Everton,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Fulham,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Hull,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Ipswich,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Manchester City,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Newcastle United,Leeds,,,SCHEDULED
+ENG-Premier League,2027-03-20 15:00:00,Nottingham Forest,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Aston Villa,Brighton,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Bournemouth,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Chelsea,Fulham,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Coventry,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Crystal Palace,Everton,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Leeds,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Liverpool,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Manchester United,Hull,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Sunderland,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-04-10 14:00:00,Tottenham,Brentford,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Arsenal,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Brentford,Leeds,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Brighton,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Everton,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Fulham,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Hull,Coventry,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Ipswich,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Manchester City,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Newcastle United,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-04-17 14:00:00,Nottingham Forest,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Aston Villa,Coventry,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Bournemouth,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Brentford,Fulham,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Chelsea,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Everton,Brighton,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Leeds,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Manchester United,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Newcastle United,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Nottingham Forest,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-04-24 14:00:00,Tottenham,Hull,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Arsenal,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Brighton,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Coventry,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Crystal Palace,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Fulham,Everton,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Hull,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Ipswich,Leeds,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Liverpool,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Manchester City,Brentford,,,SCHEDULED
+ENG-Premier League,2027-05-01 14:00:00,Sunderland,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Bournemouth,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Brentford,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Brighton,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Everton,Hull,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Fulham,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Leeds,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Manchester City,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Newcastle United,Coventry,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Nottingham Forest,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-05-08 14:00:00,Tottenham,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Arsenal,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Aston Villa,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Chelsea,Everton,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Coventry,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Crystal Palace,Brighton,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Hull,Fulham,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Ipswich,Manchester City,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Liverpool,Brentford,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Manchester United,Leeds,,,SCHEDULED
+ENG-Premier League,2027-05-15 14:00:00,Sunderland,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Bournemouth,Chelsea,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Brentford,Hull,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Brighton,Liverpool,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Everton,Arsenal,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Fulham,Coventry,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Leeds,Sunderland,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Manchester City,Aston Villa,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Newcastle United,Crystal Palace,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Nottingham Forest,Ipswich,,,SCHEDULED
+ENG-Premier League,2027-05-23 14:00:00,Tottenham,Manchester United,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Arsenal,Brighton,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Aston Villa,Tottenham,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Chelsea,Brentford,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Coventry,Nottingham Forest,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Crystal Palace,Leeds,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Hull,Newcastle United,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Ipswich,Everton,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Liverpool,Bournemouth,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Manchester United,Fulham,,,SCHEDULED
+ENG-Premier League,2027-05-30 15:00:00,Sunderland,Manchester City,,,SCHEDULED
+ESP-La Liga,2026-08-15 17:30:00,Alaves,Getafe,,,SCHEDULED
+ESP-La Liga,2026-08-15 19:30:00,Sevilla,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-08-16 17:00:00,Espanyol,Levante,,,SCHEDULED
+ESP-La Liga,2026-08-16 15:00:00,Racing Santander,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-08-17 19:00:00,Deportivo La Coruna,Elche,,,SCHEDULED
+ESP-La Liga,2026-08-19 19:00:00,Atletico Madrid,Malaga,,,SCHEDULED
+ESP-La Liga,2026-08-20 19:00:00,Rayo Vallecano,Alaves,,,SCHEDULED
+ESP-La Liga,2026-08-21 19:00:00,Real Betis,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-08-22 15:00:00,Athletic Club,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-08-22 19:30:00,Espanyol,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-08-22 17:30:00,Valencia,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-08-23 15:00:00,Atletico Madrid,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-08-23 19:30:00,Elche,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-08-23 17:30:00,Getafe,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-08-24 19:30:00,Malaga,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-08-24 17:30:00,Osasuna,Levante,,,SCHEDULED
+ESP-La Liga,2026-08-25 19:00:00,Valencia,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-08-26 19:00:00,Real Madrid,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-08-27 19:00:00,Barcelona,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-08-27 18:30:00,Celta Vigo,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-08-28 19:30:00,Alaves,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-08-28 17:00:00,Racing Santander,Elche,,,SCHEDULED
+ESP-La Liga,2026-08-29 15:00:00,Levante,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-08-29 17:00:00,Real Sociedad,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-08-29 19:30:00,Sevilla,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-08-30 19:30:00,Celta Vigo,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-08-30 17:30:00,Deportivo La Coruna,Valencia,,,SCHEDULED
+ESP-La Liga,2026-08-30 15:00:00,Real Madrid,Malaga,,,SCHEDULED
+ESP-La Liga,2026-08-31 19:30:00,Barcelona,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-08-31 17:30:00,Osasuna,Getafe,,,SCHEDULED
+ESP-La Liga,2026-09-03 19:00:00,Real Sociedad,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-09-04 19:00:00,Real Betis,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-09-05 14:15:00,Athletic Club,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-09-05 16:30:00,Rayo Vallecano,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-09-05 19:00:00,Villarreal,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-09-06 16:30:00,Alaves,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-09-06 19:00:00,Espanyol,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-09-06 16:30:00,Malaga,Levante,,,SCHEDULED
+ESP-La Liga,2026-09-06 14:15:00,Valencia,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-09-07 19:30:00,Elche,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-09-07 17:00:00,Getafe,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Athletic Club,Elche,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Celta Vigo,Malaga,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Getafe,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Levante,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Osasuna,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Racing Santander,Alaves,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Real Madrid,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Real Sociedad,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Sevilla,Valencia,,,SCHEDULED
+ESP-La Liga,2026-09-13 15:00:00,Villarreal,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Alaves,Valencia,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Atletico Madrid,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Barcelona,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Deportivo La Coruna,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Elche,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Levante,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Malaga,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Rayo Vallecano,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-09-16 15:00:00,Real Betis,Getafe,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Athletic Club,Alaves,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Atletico Madrid,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Celta Vigo,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Deportivo La Coruna,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Espanyol,Elche,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Getafe,Malaga,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Osasuna,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Sevilla,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Valencia,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-09-20 15:00:00,Villarreal,Levante,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Alaves,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Barcelona,Getafe,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Elche,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Levante,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Malaga,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Racing Santander,Valencia,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Rayo Vallecano,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Real Betis,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Real Madrid,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-10-11 15:00:00,Real Sociedad,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Celta Vigo,Alaves,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Deportivo La Coruna,Levante,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Espanyol,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Getafe,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Malaga,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Osasuna,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Real Betis,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Real Madrid,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Valencia,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-10-18 15:00:00,Villarreal,Elche,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Alaves,Malaga,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Athletic Club,Getafe,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Atletico Madrid,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Barcelona,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Celta Vigo,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Racing Santander,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Rayo Vallecano,Elche,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Real Sociedad,Levante,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Sevilla,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-10-25 16:00:00,Valencia,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Athletic Club,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Barcelona,Alaves,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Deportivo La Coruna,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Elche,Valencia,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Getafe,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Levante,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Racing Santander,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Rayo Vallecano,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Real Betis,Malaga,,,SCHEDULED
+ESP-La Liga,2026-11-01 16:00:00,Villarreal,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Atletico Madrid,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Celta Vigo,Levante,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Elche,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Espanyol,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Malaga,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Osasuna,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Real Sociedad,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Sevilla,Alaves,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Valencia,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-11-08 16:00:00,Villarreal,Getafe,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Alaves,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Athletic Club,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Barcelona,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Getafe,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Levante,Elche,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Osasuna,Malaga,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Racing Santander,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Rayo Vallecano,Valencia,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Real Madrid,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-11-22 16:00:00,Sevilla,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Celta Vigo,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Deportivo La Coruna,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Elche,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Espanyol,Getafe,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Levante,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Malaga,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Real Betis,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Real Madrid,Alaves,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Real Sociedad,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-11-29 16:00:00,Valencia,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Alaves,Espanyol,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Athletic Club,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Atletico Madrid,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Barcelona,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Getafe,Valencia,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Osasuna,Elche,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Racing Santander,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Rayo Vallecano,Levante,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Sevilla,Malaga,,,SCHEDULED
+ESP-La Liga,2026-12-06 16:00:00,Villarreal,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Atletico Madrid,Valencia,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Deportivo La Coruna,Athletic Club,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Elche,Sevilla,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Espanyol,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Levante,Alaves,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Malaga,Barcelona,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Real Betis,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Real Madrid,Osasuna,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Real Sociedad,Getafe,,,SCHEDULED
+ESP-La Liga,2026-12-13 16:00:00,Villarreal,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Alaves,Elche,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Athletic Club,Real Betis,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Barcelona,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Celta Vigo,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Deportivo La Coruna,Real Madrid,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Getafe,Levante,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Osasuna,Villarreal,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Rayo Vallecano,Malaga,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Sevilla,Racing Santander,,,SCHEDULED
+ESP-La Liga,2026-12-20 16:00:00,Valencia,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Celta Vigo,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Espanyol,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Levante,Valencia,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Malaga,Elche,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Racing Santander,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Rayo Vallecano,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Real Betis,Alaves,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Real Madrid,Getafe,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Real Sociedad,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-01-03 16:00:00,Villarreal,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Alaves,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Athletic Club,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Atletico Madrid,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Deportivo La Coruna,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Elche,Getafe,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Espanyol,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Osasuna,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Real Madrid,Levante,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Sevilla,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-01-10 16:00:00,Valencia,Malaga,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Atletico Madrid,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Barcelona,Elche,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Celta Vigo,Valencia,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Getafe,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Levante,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Malaga,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Racing Santander,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Rayo Vallecano,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Real Betis,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-01-17 16:00:00,Villarreal,Alaves,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Alaves,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Athletic Club,Levante,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Deportivo La Coruna,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Elche,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Espanyol,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Getafe,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Racing Santander,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Real Madrid,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Real Sociedad,Malaga,,,SCHEDULED
+ESP-La Liga,2027-01-24 16:00:00,Valencia,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Atletico Madrid,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Barcelona,Valencia,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Celta Vigo,Getafe,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Levante,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Malaga,Alaves,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Osasuna,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Rayo Vallecano,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Real Betis,Elche,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Sevilla,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-01-31 16:00:00,Villarreal,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Alaves,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Athletic Club,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Barcelona,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Deportivo La Coruna,Malaga,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Elche,Levante,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Espanyol,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Getafe,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Real Betis,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Real Sociedad,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-02-07 16:00:00,Valencia,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Celta Vigo,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Elche,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Levante,Malaga,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Osasuna,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Racing Santander,Getafe,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Real Madrid,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Real Sociedad,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Sevilla,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Valencia,Alaves,,,SCHEDULED
+ESP-La Liga,2027-02-14 16:00:00,Villarreal,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Alaves,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Athletic Club,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Atletico Madrid,Elche,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Barcelona,Levante,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Deportivo La Coruna,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Espanyol,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Malaga,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Rayo Vallecano,Getafe,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Sevilla,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-02-21 16:00:00,Villarreal,Valencia,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Athletic Club,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Celta Vigo,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Getafe,Alaves,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Levante,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Malaga,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Osasuna,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Racing Santander,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Real Betis,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Real Madrid,Valencia,,,SCHEDULED
+ESP-La Liga,2027-02-28 16:00:00,Real Sociedad,Elche,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Alaves,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Atletico Madrid,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Barcelona,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Deportivo La Coruna,Getafe,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Elche,Malaga,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Espanyol,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Rayo Vallecano,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Sevilla,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Valencia,Levante,,,SCHEDULED
+ESP-La Liga,2027-03-07 16:00:00,Villarreal,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Alaves,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Athletic Club,Valencia,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Barcelona,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Elche,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Getafe,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Malaga,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Osasuna,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Racing Santander,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Real Betis,Levante,,,SCHEDULED
+ESP-La Liga,2027-03-14 16:00:00,Real Madrid,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Atletico Madrid,Getafe,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Celta Vigo,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Espanyol,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Levante,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Racing Santander,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Rayo Vallecano,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Real Sociedad,Alaves,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Sevilla,Elche,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Valencia,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-03-21 16:00:00,Villarreal,Malaga,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Athletic Club,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Barcelona,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Deportivo La Coruna,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Elche,Alaves,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Getafe,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Levante,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Malaga,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Real Betis,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Real Madrid,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-04-04 15:00:00,Real Sociedad,Valencia,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Alaves,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Atletico Madrid,Levante,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Celta Vigo,Elche,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Espanyol,Malaga,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Osasuna,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Racing Santander,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Rayo Vallecano,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Sevilla,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Valencia,Getafe,,,SCHEDULED
+ESP-La Liga,2027-04-11 15:00:00,Villarreal,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Alaves,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Atletico Madrid,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Barcelona,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Deportivo La Coruna,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Elche,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Getafe,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Levante,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Malaga,Valencia,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Real Betis,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-04-18 15:00:00,Real Sociedad,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Athletic Club,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Celta Vigo,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Espanyol,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Getafe,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Osasuna,Alaves,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Racing Santander,Malaga,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Real Madrid,Elche,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Sevilla,Levante,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Valencia,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-04-21 15:00:00,Villarreal,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Atletico Madrid,Alaves,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Barcelona,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Celta Vigo,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Deportivo La Coruna,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Elche,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Levante,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Malaga,Getafe,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Rayo Vallecano,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Real Betis,Valencia,,,SCHEDULED
+ESP-La Liga,2027-05-02 15:00:00,Real Sociedad,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Alaves,Levante,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Athletic Club,Malaga,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Getafe,Elche,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Osasuna,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Racing Santander,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Rayo Vallecano,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Real Betis,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Real Madrid,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Valencia,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-05-09 15:00:00,Villarreal,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Atletico Madrid,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Deportivo La Coruna,Alaves,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Elche,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Espanyol,Valencia,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Levante,Getafe,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Malaga,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Osasuna,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Real Madrid,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Real Sociedad,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-05-16 15:00:00,Sevilla,Villarreal,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Alaves,Real Madrid,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Atletico Madrid,Athletic Club,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Barcelona,Malaga,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Celta Vigo,Real Sociedad,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Deportivo La Coruna,Espanyol,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Racing Santander,Levante,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Rayo Vallecano,Real Betis,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Sevilla,Getafe,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Valencia,Elche,,,SCHEDULED
+ESP-La Liga,2027-05-23 15:00:00,Villarreal,Osasuna,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Athletic Club,Rayo Vallecano,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Elche,Racing Santander,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Espanyol,Alaves,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Getafe,Barcelona,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Levante,Celta Vigo,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Malaga,Sevilla,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Osasuna,Valencia,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Real Betis,Atletico Madrid,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Real Madrid,Deportivo La Coruna,,,SCHEDULED
+ESP-La Liga,2027-05-30 15:00:00,Real Sociedad,Villarreal,,,SCHEDULED
+FRA-Ligue 1,2026-08-21 18:45:00,Marseille,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-08-22 18:45:00,Le Mans,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-08-22 15:15:00,Lens,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-08-22 18:45:00,Nice,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-08-22 18:45:00,Toulouse,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-08-22 18:45:00,Troyes,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-08-23 13:00:00,Angers,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-08-23 15:15:00,Le Havre,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-08-23 18:45:00,Paris Saint Germain,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-08-28 18:45:00,Lille,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-08-29 18:45:00,Auxerre,Angers,,,SCHEDULED
+FRA-Ligue 1,2026-08-29 18:45:00,Brest,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-08-29 18:45:00,Lorient,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-08-29 18:45:00,Lyon,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2026-08-29 15:15:00,Strasbourg,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-08-30 18:45:00,Monaco,Marseille,,,SCHEDULED
+FRA-Ligue 1,2026-08-30 13:00:00,Paris FC,Nice,,,SCHEDULED
+FRA-Ligue 1,2026-08-30 15:15:00,Rennes,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-09-03 18:45:00,Toulouse,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-09-04 17:00:00,Lyon,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-09-04 19:05:00,Paris Saint Germain,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-09-05 18:45:00,Le Havre,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-09-05 15:15:00,Lens,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-09-05 18:45:00,Nice,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-09-06 15:15:00,Angers,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-09-06 18:45:00,Marseille,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-09-06 13:00:00,Troyes,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-09-11 18:45:00,Rennes,Marseille,,,SCHEDULED
+FRA-Ligue 1,2026-09-12 18:45:00,Auxerre,Nice,,,SCHEDULED
+FRA-Ligue 1,2026-09-12 18:45:00,Le Havre,Angers,,,SCHEDULED
+FRA-Ligue 1,2026-09-12 18:45:00,Lorient,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-09-12 18:45:00,Paris FC,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-09-12 15:15:00,Strasbourg,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-09-13 18:45:00,Brest,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-09-13 15:15:00,Le Mans,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-09-13 13:00:00,Lille,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Angers,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Auxerre,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Le Mans,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Lyon,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Monaco,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Nice,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Paris FC,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-09-19 13:00:00,Toulouse,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2026-09-20 18:45:00,Marseille,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Brest,Angers,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Lens,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Lille,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Lorient,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Monaco,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Nice,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Paris Saint Germain,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Rennes,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-10-10 13:00:00,Troyes,Marseille,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Angers,Marseille,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Le Havre,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Le Mans,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Lille,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Lorient,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Lyon,Nice,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Paris FC,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Strasbourg,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-10-17 13:00:00,Troyes,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Angers,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Auxerre,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Brest,Nice,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Lens,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Marseille,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Monaco,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Rennes,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-10-24 13:00:00,Toulouse,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-10-25 19:45:00,Paris Saint Germain,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Le Havre,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Lille,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Lorient,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Lyon,Angers,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Marseille,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Nice,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Paris FC,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Strasbourg,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-10-31 14:00:00,Troyes,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Angers,Nice,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Auxerre,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Brest,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Le Havre,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Le Mans,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 19:45:00,Lens,Marseille,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Paris Saint Germain,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Rennes,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-11-07 14:00:00,Toulouse,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Lens,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Lille,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Lorient,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Marseille,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Monaco,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Nice,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Paris FC,Angers,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Strasbourg,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-11-21 14:00:00,Troyes,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Angers,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Auxerre,Marseille,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Brest,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Le Havre,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Le Mans,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Lyon,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Nice,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Paris Saint Germain,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-11-28 14:00:00,Toulouse,Rennes,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Lens,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Lille,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Marseille,Nice,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Monaco,Angers,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Paris FC,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Rennes,Brest,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Strasbourg,Lorient,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Toulouse,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2026-12-05 14:00:00,Troyes,Lyon,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Angers,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Auxerre,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Brest,Troyes,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Le Havre,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Lorient,Lille,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Nice,Lens,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Paris Saint Germain,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2026-12-12 14:00:00,Rennes,Monaco,,,SCHEDULED
+FRA-Ligue 1,2026-12-13 19:45:00,Lyon,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Brest,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Le Mans,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Lille,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Lorient,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Monaco,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Paris FC,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Toulouse,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-01-02 14:00:00,Troyes,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-01-03 19:45:00,Lens,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Angers,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Auxerre,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Lyon,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Marseille,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Monaco,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Nice,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Paris FC,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Rennes,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-01-16 14:00:00,Strasbourg,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Le Havre,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Le Mans,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Lens,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Lille,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Lorient,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Paris Saint Germain,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Strasbourg,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Toulouse,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-01-23 14:00:00,Troyes,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Angers,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Brest,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Le Mans,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Lyon,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Marseille,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Monaco,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Paris FC,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Rennes,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-01-30 14:00:00,Toulouse,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Auxerre,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Le Havre,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Lens,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Lorient,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Nice,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Rennes,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Strasbourg,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-02-06 14:00:00,Troyes,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-02-07 19:45:00,Paris Saint Germain,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Auxerre,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Brest,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Le Mans,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Lille,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Lorient,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Lyon,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Marseille,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Paris FC,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-02-13 14:00:00,Toulouse,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Angers,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Le Havre,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Lens,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Lille,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Monaco,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Nice,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Paris Saint Germain,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Rennes,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-02-20 14:00:00,Strasbourg,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Auxerre,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Brest,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Le Mans,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Lorient,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Lyon,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Marseille,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Strasbourg,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-02-27 14:00:00,Troyes,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-02-28 19:45:00,Paris Saint Germain,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Angers,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Le Havre,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Lens,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Lille,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Monaco,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Paris FC,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Rennes,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Toulouse,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-03-06 14:00:00,Troyes,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Auxerre,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Brest,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Le Havre,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Le Mans,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Lyon,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Marseille,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Nice,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Paris FC,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-03-13 14:00:00,Strasbourg,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Angers,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Lens,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Lorient,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Monaco,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Paris Saint Germain,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Rennes,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Toulouse,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-03-20 14:00:00,Troyes,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-03-21 19:45:00,Marseille,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Angers,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Auxerre,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Brest,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Le Havre,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Le Mans,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Lille,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Nice,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Paris FC,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-04-03 13:00:00,Strasbourg,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Le Mans,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Lille,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Lorient,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Lyon,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Marseille,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Monaco,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Nice,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Paris Saint Germain,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-04-10 13:00:00,Troyes,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Angers,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Auxerre,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Brest,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Le Havre,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Lens,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Monaco,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Paris Saint Germain,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Rennes,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-04-17 13:00:00,Toulouse,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Le Mans,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Lille,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Lorient,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Lyon,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Marseille,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Nice,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Paris FC,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Strasbourg,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-04-24 13:00:00,Troyes,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Auxerre,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Le Havre,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Lens,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Monaco,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Paris Saint Germain,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Rennes,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Strasbourg,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Toulouse,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-05-01 13:00:00,Troyes,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Angers,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Brest,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Le Mans,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Lens,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Lorient,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Nice,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Paris FC,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-05-08 13:00:00,Rennes,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-05-09 18:45:00,Lyon,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Auxerre,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Brest,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Lille,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Lyon,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Marseille,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Monaco,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Paris Saint Germain,Nice,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Strasbourg,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-05-16 13:00:00,Toulouse,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Angers,Brest,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Le Havre,Lille,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Le Mans,Strasbourg,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Lens,Rennes,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Lorient,Lyon,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Nice,Monaco,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Paris FC,Marseille,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Toulouse,Auxerre,,,SCHEDULED
+FRA-Ligue 1,2027-05-22 13:00:00,Troyes,Paris Saint Germain,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Auxerre,Le Havre,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Brest,Lens,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Lille,Le Mans,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Lyon,Paris FC,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Marseille,Lorient,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Monaco,Troyes,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Paris Saint Germain,Toulouse,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Rennes,Angers,,,SCHEDULED
+FRA-Ligue 1,2027-05-29 13:00:00,Strasbourg,Nice,,,SCHEDULED
+GER-Bundesliga,2026-08-28 18:30:00,Bayern Munich,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-08-29 16:30:00,Borussia Dortmund,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-08-29 13:30:00,Elversberg,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-08-29 13:30:00,FC Cologne,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2026-08-29 13:30:00,Mainz 05,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-08-29 13:30:00,RasenBallsport Leipzig,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-08-29 13:30:00,Union Berlin,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-08-30 15:30:00,Augsburg,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-08-30 13:30:00,Freiburg,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-09-04 18:30:00,VfB Stuttgart,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-09-05 13:30:00,Bayer Leverkusen,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2026-09-05 13:30:00,Borussia M.Gladbach,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-09-05 13:30:00,Hoffenheim,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-09-05 13:30:00,Paderborn,Freiburg,,,SCHEDULED
+GER-Bundesliga,2026-09-05 16:30:00,Schalke 04,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-09-05 13:30:00,Werder Bremen,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-09-06 15:30:00,Eintracht Frankfurt,Augsburg,,,SCHEDULED
+GER-Bundesliga,2026-09-06 13:30:00,Hamburger SV,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2026-09-11 18:30:00,Union Berlin,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-09-12 13:30:00,Augsburg,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-09-12 13:30:00,Borussia Dortmund,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-09-12 16:30:00,FC Cologne,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-09-12 13:30:00,Freiburg,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-09-12 13:30:00,Hoffenheim,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-09-12 13:30:00,Mainz 05,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-09-13 15:30:00,Elversberg,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-09-13 13:30:00,RasenBallsport Leipzig,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-09-18 18:30:00,Bayern Munich,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2026-09-19 13:30:00,Borussia M.Gladbach,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2026-09-19 13:30:00,Eintracht Frankfurt,Freiburg,,,SCHEDULED
+GER-Bundesliga,2026-09-19 13:30:00,Hamburger SV,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-09-19 16:30:00,VfB Stuttgart,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-09-19 13:30:00,Werder Bremen,Augsburg,,,SCHEDULED
+GER-Bundesliga,2026-09-20 13:30:00,Bayer Leverkusen,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-09-20 17:30:00,Paderborn,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2026-09-20 15:30:00,Schalke 04,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Augsburg,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Borussia Dortmund,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,FC Cologne,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Freiburg,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Hoffenheim,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Mainz 05,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Paderborn,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,RasenBallsport Leipzig,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-10-10 13:30:00,Union Berlin,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Bayer Leverkusen,Freiburg,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Bayern Munich,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Borussia M.Gladbach,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Eintracht Frankfurt,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Elversberg,Augsburg,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Hamburger SV,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Schalke 04,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Union Berlin,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-10-17 13:30:00,Werder Bremen,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,Augsburg,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,Borussia Dortmund,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,FC Cologne,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,Freiburg,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,Hoffenheim,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,Mainz 05,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,Paderborn,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,RasenBallsport Leipzig,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-10-24 13:30:00,VfB Stuttgart,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Augsburg,Freiburg,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Bayer Leverkusen,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Bayern Munich,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Borussia M.Gladbach,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Eintracht Frankfurt,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Elversberg,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Schalke 04,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Union Berlin,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-10-31 14:30:00,Werder Bremen,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,Borussia Dortmund,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,FC Cologne,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,Freiburg,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,Hamburger SV,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,Hoffenheim,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,Mainz 05,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,Paderborn,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,RasenBallsport Leipzig,Augsburg,,,SCHEDULED
+GER-Bundesliga,2026-11-07 14:30:00,VfB Stuttgart,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Augsburg,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Bayer Leverkusen,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Bayern Munich,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Borussia M.Gladbach,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Eintracht Frankfurt,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Elversberg,Freiburg,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Schalke 04,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Union Berlin,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-11-21 14:30:00,Werder Bremen,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Borussia Dortmund,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,FC Cologne,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Freiburg,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Hamburger SV,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Hoffenheim,Augsburg,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Mainz 05,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Paderborn,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,VfB Stuttgart,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-11-28 14:30:00,Werder Bremen,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Augsburg,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Bayer Leverkusen,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Bayern Munich,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Eintracht Frankfurt,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Elversberg,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Freiburg,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,RasenBallsport Leipzig,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Schalke 04,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-12-05 14:30:00,Union Berlin,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Borussia Dortmund,Augsburg,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Borussia M.Gladbach,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,FC Cologne,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Hamburger SV,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Hoffenheim,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Mainz 05,Freiburg,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Paderborn,Elversberg,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,VfB Stuttgart,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2026-12-12 14:30:00,Werder Bremen,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Augsburg,Paderborn,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Bayer Leverkusen,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Bayern Munich,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Elversberg,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Freiburg,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Mainz 05,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,RasenBallsport Leipzig,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Schalke 04,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2026-12-19 14:30:00,Union Berlin,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Borussia Dortmund,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Borussia M.Gladbach,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Eintracht Frankfurt,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,FC Cologne,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Hamburger SV,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Hoffenheim,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Paderborn,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,VfB Stuttgart,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-01-09 14:30:00,Werder Bremen,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Augsburg,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Bayern Munich,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Elversberg,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,FC Cologne,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Freiburg,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Mainz 05,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,RasenBallsport Leipzig,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Schalke 04,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-01-13 14:30:00,Union Berlin,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Bayer Leverkusen,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Borussia Dortmund,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Borussia M.Gladbach,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Eintracht Frankfurt,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Hamburger SV,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Hoffenheim,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Paderborn,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,VfB Stuttgart,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-01-16 14:30:00,Werder Bremen,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Bayer Leverkusen,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Borussia M.Gladbach,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Eintracht Frankfurt,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Hamburger SV,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Hoffenheim,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Paderborn,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Schalke 04,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,VfB Stuttgart,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-01-23 14:30:00,Werder Bremen,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Augsburg,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Bayern Munich,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Borussia Dortmund,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Elversberg,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,FC Cologne,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Freiburg,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Mainz 05,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,RasenBallsport Leipzig,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-01-30 14:30:00,Union Berlin,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Bayer Leverkusen,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Bayern Munich,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Borussia M.Gladbach,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Eintracht Frankfurt,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Hamburger SV,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Paderborn,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Schalke 04,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,VfB Stuttgart,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-02-06 14:30:00,Werder Bremen,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Augsburg,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Borussia Dortmund,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Elversberg,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,FC Cologne,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Freiburg,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Hoffenheim,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Mainz 05,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,RasenBallsport Leipzig,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-02-13 14:30:00,Union Berlin,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Bayer Leverkusen,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Bayern Munich,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Borussia M.Gladbach,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Eintracht Frankfurt,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Elversberg,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Hamburger SV,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Schalke 04,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,VfB Stuttgart,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-02-20 14:30:00,Werder Bremen,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,Augsburg,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,Borussia Dortmund,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,FC Cologne,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,Freiburg,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,Hoffenheim,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,Mainz 05,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,Paderborn,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,RasenBallsport Leipzig,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-02-27 14:30:00,VfB Stuttgart,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Bayer Leverkusen,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Bayern Munich,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Borussia M.Gladbach,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Eintracht Frankfurt,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Elversberg,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Hamburger SV,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Schalke 04,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Union Berlin,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-03-03 14:30:00,Werder Bremen,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,Borussia Dortmund,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,FC Cologne,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,Freiburg,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,Hamburger SV,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,Hoffenheim,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,Mainz 05,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,Paderborn,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,RasenBallsport Leipzig,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-03-06 14:30:00,VfB Stuttgart,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Augsburg,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Bayer Leverkusen,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Bayern Munich,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Borussia M.Gladbach,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Eintracht Frankfurt,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Elversberg,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Schalke 04,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Union Berlin,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-03-13 14:30:00,Werder Bremen,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,Borussia Dortmund,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,FC Cologne,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,Freiburg,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,Hamburger SV,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,Hoffenheim,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,Mainz 05,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,Paderborn,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,RasenBallsport Leipzig,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-03-20 14:30:00,VfB Stuttgart,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Augsburg,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Bayer Leverkusen,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Bayern Munich,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Borussia M.Gladbach,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Eintracht Frankfurt,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Elversberg,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,RasenBallsport Leipzig,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Schalke 04,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-04-03 13:30:00,Union Berlin,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Borussia Dortmund,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Borussia M.Gladbach,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,FC Cologne,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Hamburger SV,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Hoffenheim,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Mainz 05,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Paderborn,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,VfB Stuttgart,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-04-10 13:30:00,Werder Bremen,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Augsburg,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Bayer Leverkusen,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Bayern Munich,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Eintracht Frankfurt,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Elversberg,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Freiburg,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,RasenBallsport Leipzig,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Schalke 04,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-04-17 13:30:00,Union Berlin,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Borussia Dortmund,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Borussia M.Gladbach,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Eintracht Frankfurt,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,FC Cologne,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Hamburger SV,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Hoffenheim,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Paderborn,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,VfB Stuttgart,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-04-24 13:30:00,Werder Bremen,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Augsburg,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Bayer Leverkusen,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Bayern Munich,Borussia M.Gladbach,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Elversberg,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Freiburg,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Mainz 05,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,RasenBallsport Leipzig,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Schalke 04,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-05-08 13:30:00,Union Berlin,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Bayer Leverkusen,Bayern Munich,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Borussia Dortmund,FC Cologne,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Borussia M.Gladbach,Augsburg,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Eintracht Frankfurt,Elversberg,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Hamburger SV,Freiburg,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Hoffenheim,Mainz 05,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Paderborn,Union Berlin,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,VfB Stuttgart,RasenBallsport Leipzig,,,SCHEDULED
+GER-Bundesliga,2027-05-15 13:30:00,Werder Bremen,Schalke 04,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Augsburg,Hamburger SV,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Bayern Munich,Eintracht Frankfurt,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Elversberg,Werder Bremen,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,FC Cologne,Paderborn,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Freiburg,Borussia Dortmund,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Mainz 05,VfB Stuttgart,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,RasenBallsport Leipzig,Hoffenheim,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Schalke 04,Bayer Leverkusen,,,SCHEDULED
+GER-Bundesliga,2027-05-22 13:30:00,Union Berlin,Borussia M.Gladbach,,,SCHEDULED
+ITA-Serie A,2026-08-22 18:45:00,Genoa,Napoli,,,SCHEDULED
+ITA-Serie A,2026-08-22 16:30:00,Inter,Monza,,,SCHEDULED
+ITA-Serie A,2026-08-22 18:45:00,Parma Calcio 1913,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-08-22 16:30:00,Udinese,Como,,,SCHEDULED
+ITA-Serie A,2026-08-23 18:45:00,Atalanta,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-08-23 16:30:00,Frosinone,Juventus,,,SCHEDULED
+ITA-Serie A,2026-08-23 18:45:00,Torino,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-08-23 16:30:00,Venezia,Lecce,,,SCHEDULED
+ITA-Serie A,2026-08-24 16:30:00,Bologna,Lazio,,,SCHEDULED
+ITA-Serie A,2026-08-24 18:45:00,Roma,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-08-28 18:45:00,AC Milan,Venezia,,,SCHEDULED
+ITA-Serie A,2026-08-29 16:30:00,Fiorentina,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-08-29 18:45:00,Juventus,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-08-29 16:30:00,Monza,Udinese,,,SCHEDULED
+ITA-Serie A,2026-08-29 16:30:00,Sassuolo,Torino,,,SCHEDULED
+ITA-Serie A,2026-08-30 18:45:00,Cagliari,Inter,,,SCHEDULED
+ITA-Serie A,2026-08-30 18:45:00,Lazio,Genoa,,,SCHEDULED
+ITA-Serie A,2026-08-30 16:30:00,Napoli,Como,,,SCHEDULED
+ITA-Serie A,2026-08-31 18:45:00,Atalanta,Bologna,,,SCHEDULED
+ITA-Serie A,2026-08-31 16:30:00,Lecce,Roma,,,SCHEDULED
+ITA-Serie A,2026-09-04 18:45:00,Genoa,Como,,,SCHEDULED
+ITA-Serie A,2026-09-05 13:00:00,Fiorentina,Torino,,,SCHEDULED
+ITA-Serie A,2026-09-05 16:00:00,Inter,Napoli,,,SCHEDULED
+ITA-Serie A,2026-09-05 18:45:00,Roma,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-09-06 16:00:00,Bologna,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-09-06 13:00:00,Frosinone,Venezia,,,SCHEDULED
+ITA-Serie A,2026-09-06 18:45:00,Juventus,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-09-06 13:00:00,Parma Calcio 1913,Monza,,,SCHEDULED
+ITA-Serie A,2026-09-07 16:00:00,Cagliari,Lecce,,,SCHEDULED
+ITA-Serie A,2026-09-07 18:45:00,Udinese,Lazio,,,SCHEDULED
+ITA-Serie A,2026-09-11 18:45:00,Venezia,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-09-12 18:45:00,Atalanta,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-09-12 13:00:00,Genoa,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-09-12 16:00:00,Sassuolo,Juventus,,,SCHEDULED
+ITA-Serie A,2026-09-13 13:00:00,Como,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-09-13 18:45:00,Lazio,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-09-13 13:00:00,Lecce,Monza,,,SCHEDULED
+ITA-Serie A,2026-09-13 16:00:00,Napoli,Bologna,,,SCHEDULED
+ITA-Serie A,2026-09-13 10:30:00,Torino,Roma,,,SCHEDULED
+ITA-Serie A,2026-09-14 18:45:00,Inter,Udinese,,,SCHEDULED
+ITA-Serie A,2026-09-18 18:45:00,Monza,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-09-19 13:00:00,Bologna,Torino,,,SCHEDULED
+ITA-Serie A,2026-09-19 16:00:00,Roma,Inter,,,SCHEDULED
+ITA-Serie A,2026-09-19 13:00:00,Udinese,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-09-19 18:45:00,Venezia,Lazio,,,SCHEDULED
+ITA-Serie A,2026-09-20 18:45:00,AC Milan,Lecce,,,SCHEDULED
+ITA-Serie A,2026-09-20 10:30:00,Fiorentina,Napoli,,,SCHEDULED
+ITA-Serie A,2026-09-20 13:00:00,Frosinone,Como,,,SCHEDULED
+ITA-Serie A,2026-09-20 16:00:00,Juventus,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-09-20 13:00:00,Parma Calcio 1913,Genoa,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Atalanta,Venezia,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Cagliari,Juventus,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Como,Roma,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Genoa,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Inter,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Lazio,Monza,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Lecce,Bologna,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Napoli,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Sassuolo,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-10-11 13:00:00,Torino,Udinese,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,AC Milan,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Bologna,Inter,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Fiorentina,Como,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Frosinone,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Juventus,Lazio,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Monza,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Parma Calcio 1913,Torino,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Roma,Genoa,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Udinese,Lecce,,,SCHEDULED
+ITA-Serie A,2026-10-17 13:00:00,Venezia,Napoli,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Atalanta,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Cagliari,Bologna,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Como,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Genoa,Venezia,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Inter,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Lazio,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Lecce,Juventus,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Napoli,Roma,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Torino,Monza,,,SCHEDULED
+ITA-Serie A,2026-10-25 14:00:00,Udinese,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,AC Milan,Bologna,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Fiorentina,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Frosinone,Lecce,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Genoa,Juventus,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Monza,Napoli,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Parma Calcio 1913,Udinese,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Roma,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Sassuolo,Lazio,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Torino,Como,,,SCHEDULED
+ITA-Serie A,2026-10-28 14:00:00,Venezia,Inter,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,AC Milan,Inter,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Atalanta,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Bologna,Monza,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Como,Venezia,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Frosinone,Torino,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Juventus,Napoli,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Lazio,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Lecce,Genoa,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Sassuolo,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-11-01 14:00:00,Udinese,Roma,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Cagliari,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Fiorentina,Juventus,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Genoa,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Inter,Como,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Monza,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Napoli,Lazio,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Parma Calcio 1913,Bologna,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Roma,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Torino,Lecce,,,SCHEDULED
+ITA-Serie A,2026-11-08 14:00:00,Venezia,Udinese,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,AC Milan,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Atalanta,Inter,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Bologna,Udinese,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Como,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Juventus,Venezia,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Lazio,Lecce,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Monza,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Napoli,Torino,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Parma Calcio 1913,Roma,,,SCHEDULED
+ITA-Serie A,2026-11-22 14:00:00,Sassuolo,Genoa,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Cagliari,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Como,Juventus,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Frosinone,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Inter,Genoa,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Lecce,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Roma,Monza,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Sassuolo,Napoli,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Torino,Lazio,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Udinese,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-11-29 14:00:00,Venezia,Bologna,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,AC Milan,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Bologna,Roma,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Fiorentina,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Frosinone,Inter,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Genoa,Torino,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Juventus,Udinese,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Lazio,Atalanta,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Monza,Como,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Napoli,Lecce,,,SCHEDULED
+ITA-Serie A,2026-12-06 14:00:00,Venezia,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Atalanta,Genoa,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Cagliari,Venezia,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Como,Bologna,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Inter,Torino,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Juventus,Monza,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Lazio,Roma,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Lecce,Sassuolo,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Napoli,AC Milan,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Parma Calcio 1913,Fiorentina,,,SCHEDULED
+ITA-Serie A,2026-12-13 14:00:00,Udinese,Frosinone,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,AC Milan,Como,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Atalanta,Napoli,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Fiorentina,Bologna,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Frosinone,Lazio,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Genoa,Udinese,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Lecce,Inter,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Roma,Juventus,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Sassuolo,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Torino,Cagliari,,,SCHEDULED
+ITA-Serie A,2026-12-20 14:00:00,Venezia,Monza,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Bologna,Juventus,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Cagliari,Genoa,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Como,Lecce,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Fiorentina,Lazio,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Inter,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Monza,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Parma Calcio 1913,Napoli,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Roma,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Torino,Venezia,,,SCHEDULED
+ITA-Serie A,2027-01-03 14:00:00,Udinese,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,AC Milan,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Atalanta,Como,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Frosinone,Bologna,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Genoa,Monza,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Juventus,Torino,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Lazio,Inter,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Lecce,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Napoli,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Sassuolo,Udinese,,,SCHEDULED
+ITA-Serie A,2027-01-06 14:00:00,Venezia,Roma,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Bologna,Genoa,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Cagliari,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Como,Lazio,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Fiorentina,Lecce,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Inter,Juventus,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Monza,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Parma Calcio 1913,Venezia,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Roma,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Torino,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-01-10 14:00:00,Udinese,Napoli,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,AC Milan,Torino,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Atalanta,Roma,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Cagliari,Como,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Juventus,Genoa,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Lazio,Bologna,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Lecce,Udinese,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Napoli,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Parma Calcio 1913,Inter,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Sassuolo,Monza,,,SCHEDULED
+ITA-Serie A,2027-01-17 14:00:00,Venezia,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Bologna,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Como,Napoli,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Fiorentina,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Frosinone,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Genoa,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Inter,Venezia,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Juventus,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Lecce,Torino,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Monza,Lazio,,,SCHEDULED
+ITA-Serie A,2027-01-24 14:00:00,Roma,Udinese,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,AC Milan,Juventus,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Atalanta,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Cagliari,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Genoa,Lecce,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Lazio,Venezia,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Monza,Roma,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Napoli,Inter,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Sassuolo,Como,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Torino,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-01-31 14:00:00,Udinese,Bologna,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Atalanta,Lazio,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Bologna,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Como,Monza,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Fiorentina,Udinese,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Inter,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Juventus,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Lecce,Napoli,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Parma Calcio 1913,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Roma,Torino,,,SCHEDULED
+ITA-Serie A,2027-02-07 14:00:00,Venezia,Genoa,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Bologna,Como,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Cagliari,Lazio,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Frosinone,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Genoa,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Inter,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Monza,Lecce,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Napoli,Juventus,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Roma,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Torino,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-02-14 14:00:00,Udinese,Venezia,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,AC Milan,Genoa,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Atalanta,Monza,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Como,Torino,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Fiorentina,Inter,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Juventus,Bologna,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Lazio,Napoli,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Lecce,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Sassuolo,Roma,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Udinese,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-02-21 14:00:00,Venezia,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Bologna,Lecce,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Cagliari,Udinese,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Como,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Frosinone,Napoli,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Genoa,Lazio,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Inter,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Monza,Juventus,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Parma Calcio 1913,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Roma,Venezia,,,SCHEDULED
+ITA-Serie A,2027-02-28 14:00:00,Torino,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,AC Milan,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Atalanta,Torino,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Fiorentina,Venezia,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Juventus,Roma,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Lazio,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Lecce,Como,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Monza,Genoa,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Napoli,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Sassuolo,Bologna,,,SCHEDULED
+ITA-Serie A,2027-03-07 14:00:00,Udinese,Inter,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,AC Milan,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Bologna,Napoli,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Cagliari,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Como,Udinese,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Frosinone,Monza,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Genoa,Roma,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Lazio,Juventus,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Parma Calcio 1913,Lecce,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Torino,Inter,,,SCHEDULED
+ITA-Serie A,2027-03-14 14:00:00,Venezia,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Atalanta,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Fiorentina,Genoa,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Inter,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Juventus,Como,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Monza,Bologna,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Napoli,Venezia,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Parma Calcio 1913,Lazio,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Roma,Lecce,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Sassuolo,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-03-21 14:00:00,Udinese,Torino,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,AC Milan,Monza,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Cagliari,Napoli,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Como,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Frosinone,Udinese,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Genoa,Inter,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Lecce,Lazio,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Roma,Bologna,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Sassuolo,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Torino,Juventus,,,SCHEDULED
+ITA-Serie A,2027-04-04 13:00:00,Venezia,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Bologna,Venezia,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Cagliari,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Fiorentina,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Frosinone,Genoa,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Inter,Roma,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Juventus,Lecce,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Lazio,Torino,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Napoli,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Parma Calcio 1913,Como,,,SCHEDULED
+ITA-Serie A,2027-04-11 13:00:00,Udinese,Monza,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,AC Milan,Napoli,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Atalanta,Udinese,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Bologna,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Como,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Fiorentina,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Monza,Inter,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Roma,Lazio,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Sassuolo,Lecce,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Torino,Genoa,,,SCHEDULED
+ITA-Serie A,2027-04-18 13:00:00,Venezia,Juventus,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Cagliari,Monza,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Frosinone,Roma,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Genoa,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Inter,Bologna,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Juventus,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Lazio,Como,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Lecce,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Napoli,Udinese,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Parma Calcio 1913,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-04-25 13:00:00,Venezia,Torino,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,AC Milan,Lazio,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Atalanta,Juventus,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Bologna,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Como,Inter,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Lecce,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Monza,Venezia,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Roma,Napoli,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Sassuolo,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Torino,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-05-02 13:00:00,Udinese,Genoa,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Fiorentina,Roma,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Frosinone,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Genoa,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Inter,Lecce,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Lazio,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Napoli,Monza,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Parma Calcio 1913,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Torino,Bologna,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Udinese,Juventus,,,SCHEDULED
+ITA-Serie A,2027-05-09 13:00:00,Venezia,Como,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,AC Milan,Roma,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Bologna,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Cagliari,Torino,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Como,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Juventus,Inter,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Lazio,Udinese,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Lecce,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Monza,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Napoli,Genoa,,,SCHEDULED
+ITA-Serie A,2027-05-16 13:00:00,Sassuolo,Venezia,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Atalanta,Lecce,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Fiorentina,Monza,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Frosinone,Cagliari,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Genoa,Bologna,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Inter,Lazio,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Parma Calcio 1913,Juventus,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Roma,Como,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Torino,Napoli,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Udinese,Sassuolo,,,SCHEDULED
+ITA-Serie A,2027-05-23 13:00:00,Venezia,AC Milan,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,AC Milan,Udinese,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Bologna,Parma Calcio 1913,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Cagliari,Roma,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Como,Genoa,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Juventus,Frosinone,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Lazio,Fiorentina,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Lecce,Venezia,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Monza,Torino,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Napoli,Atalanta,,,SCHEDULED
+ITA-Serie A,2027-05-30 13:00:00,Sassuolo,Inter,,,SCHEDULED
