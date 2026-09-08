@@ -1,46 +1,42 @@
-"""
-Tercer script del robot: stats de jugadores con xG, via el dataset de
-Kaggle "Football Players Stats 2025-2026" (se actualiza por jornada por
-su propio mantenedor -- nosotros solo lo bajamos).
-
-Necesita las variables de entorno KAGGLE_USERNAME y KAGGLE_KEY (Secrets de
-GitHub) -- son las que vienen en el kaggle.json que se descarga desde
-Kaggle > Settings > API > Create New Token.
-"""
+import csv
 import glob
 import os
+import shutil
 import subprocess
-import sys
 
 DATASET = "hubertsidorowicz/football-players-stats-2025-2026"
 
-# el paquete "kaggle" no viene preinstalado en el runner de GitHub Actions
-subprocess.run([sys.executable, "-m", "pip", "install", "-q", "kaggle"], check=True)
-
-# el paquete kaggle lee estas variables de entorno directo, no hace falta
-# escribir un archivo kaggle.json a mano
-os.environ["KAGGLE_USERNAME"] = os.environ["KAGGLE_USERNAME"]
-os.environ["KAGGLE_KEY"] = os.environ["KAGGLE_KEY"]
-
-subprocess.run(
-    ["kaggle", "datasets", "download", "-d", DATASET, "-p", "xg_data", "--unzip"],
-    check=True,
-)
+try:
+    subprocess.run(
+        ["kaggle", "datasets", "download", "-d", DATASET, "-p", "xg_data", "--unzip"],
+        check=True,
+    )
+except Exception as e:
+    print(f"Error al bajar dataset de Kaggle: {e}")
 
 csvs = sorted(glob.glob("xg_data/*.csv"))
-print("Archivos encontrados en el dataset:", csvs)
+print("Archivos encontrados:", csvs)
 
 if not csvs:
-    print("No se encontro ningun CSV adentro del dataset -- revisar manualmente.")
+    print("No se encontraron CSVs en el dataset de Kaggle.")
+elif len(csvs) == 1:
+    shutil.copy(csvs[0], "player_stats_xg.csv")
+    print("Copiado player_stats_xg.csv con éxito.")
 else:
-    # el dataset trae un CSV por liga o uno combinado, segun la version del
-    # mantenedor -- los dejamos todos, sin asumir un nombre fijo, y guardamos
-    # una copia con nombre estable para que el modelo siempre sepa donde buscar
-    import shutil
-    if len(csvs) == 1:
-        shutil.copy(csvs[0], "player_stats_xg.csv")
-    else:
-        import pandas as pd
-        dfs = [pd.read_csv(c) for c in csvs]
-        pd.concat(dfs, ignore_index=True).to_csv("player_stats_xg.csv", index=False)
-    print("Guardado player_stats_xg.csv")
+    # Combinar múltiples CSVs usando módulo csv estándar (sin requerir pandas)
+    combined_rows = []
+    header = None
+    for file in csvs:
+        with open(file, "r", encoding="utf-8") as f:
+            reader = csv.reader(f)
+            file_header = next(reader, None)
+            if not header:
+                header = file_header
+                combined_rows.append(header)
+            for row in reader:
+                combined_rows.append(row)
+
+    with open("player_stats_xg.csv", "w", newline="", encoding="utf-8") as f:
+        writer = csv.writer(f)
+        writer.writerows(combined_rows)
+    print("Combinados múltiples CSVs en player_stats_xg.csv")
