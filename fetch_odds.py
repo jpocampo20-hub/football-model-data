@@ -2,76 +2,59 @@ import json
 import urllib.request
 import pandas as pd
 
-print("Iniciando extracción de cuotas de apuestas vía TheSportsDB...")
+print("Iniciando extracción de cuotas de mercado reales...")
 
-# Configuración de ligas principales con sus IDs correspondientes en TheSportsDB
-leagues_config = [
-    {"id": "4328", "name": "English Premier League", "code": "E0"},
-    {"id": "4335", "name": "Spanish La Liga", "code": "SP1"},
-    {"id": "4331", "name": "German Bundesliga", "code": "D1"},
-    {"id": "4332", "name": "Italian Serie A", "code": "I1"},
-    {"id": "4334", "name": "French Ligue 1", "code": "F1"},
+sports = [
+    {"key": "soccer_epl", "code": "E0", "name": "Premier League"},
+    {"key": "soccer_spain_la_liga", "code": "SP1", "name": "La Liga"},
+    {"key": "soccer_germany_bundesliga", "code": "D1", "name": "Bundesliga"},
+    {"key": "soccer_italy_serie_a", "code": "I1", "name": "Serie A"},
+    {"key": "soccer_france_ligue_one", "code": "F1", "name": "Ligue 1"}
 ]
 
-headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
-}
+API_KEY = "4c30c804beec42e39ee4ef98b8c9d1a8"
+all_odds = []
 
-all_rows = []
-
-for league in leagues_config:
-    # URL oficial de la API V1 con la clave gratuita "123"
-    url = f"https://www.thesportsdb.com/api/v1/json/123/eventsnextleague.php?id={league['id']}"
+for sport in sports:
+    url = f"https://api.the-odds-api.com/v4/sports/{sport['key']}/odds/?apiKey={API_KEY}&regions=eu&markets=h2h&oddsFormat=decimal"
     try:
-        req = urllib.request.Request(url, headers=headers)
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
         with urllib.request.urlopen(req, timeout=12) as response:
             data = json.loads(response.read().decode("utf-8"))
-            events = data.get("events") or []
-
             count = 0
-            for event in events:
-                all_rows.append({
-                    "Div": league["code"],
-                    "Date": event.get("strDate", ""),
-                    "Time": event.get("strTime", ""),
-                    "HomeTeam": event.get("strHomeTeam", ""),
-                    "AwayTeam": event.get("strAwayTeam", ""),
-                    "FTHG": event.get("intHomeScore", ""),
-                    "FTAG": event.get("intAwayScore", ""),
-                    "FTR": "",
-                    "B365H": 2.10,
-                    "B365D": 3.40,
-                    "B365A": 3.20,
-                    "PSH": 2.12,
-                    "PSD": 3.45,
-                    "PSA": 3.25,
+            for match in data:
+                home_team = match.get("home_team", "")
+                away_team = match.get("away_team", "")
+                commence_time = match.get("commence_time", "")
+                
+                b365_h, b365_d, b365_a = "", "", ""
+                
+                for bookmaker in match.get("bookmakers", []):
+                    for market in bookmaker.get("markets", []):
+                        if market.get("key") == "h2h":
+                            outcomes = market.get("outcomes", [])
+                            b365_h = next((o.get("price") for o in outcomes if o.get("name") == home_team), "")
+                            b365_a = next((o.get("price") for o in outcomes if o.get("name") == away_team), "")
+                            b365_d = next((o.get("price") for o in outcomes if o.get("name") == "Draw"), "")
+
+                all_odds.append({
+                    "Div": sport["code"],
+                    "Date": commence_time[:10] if commence_time else "",
+                    "Time": commence_time[11:19] if commence_time else "",
+                    "HomeTeam": home_team,
+                    "AwayTeam": away_team,
+                    "B365H": b365_h,
+                    "B365D": b365_d,
+                    "B365A": b365_a,
                 })
                 count += 1
-            print(f"✅ {league['name']}: {count} próximos partidos cargados.")
+            print(f"✅ {sport['name']}: {count} partidos con cuotas reales cargados.")
     except Exception as e:
-        print(f"⚠️ Error al consultar {league['name']}: {e}")
+        print(f"⚠️ Error consultando cuotas de {sport['name']}: {e}")
 
-df = pd.DataFrame(all_rows)
-
+df = pd.DataFrame(all_odds)
 if df.empty:
-    df = pd.DataFrame(
-        columns=[
-            "Div",
-            "Date",
-            "Time",
-            "HomeTeam",
-            "AwayTeam",
-            "FTHG",
-            "FTAG",
-            "FTR",
-            "B365H",
-            "B365D",
-            "B365A",
-            "PSH",
-            "PSD",
-            "PSA",
-        ]
-    )
+    df = pd.DataFrame(columns=["Div", "Date", "Time", "HomeTeam", "AwayTeam", "B365H", "B365D", "B365A"])
 
 df.to_csv("odds_data.csv", index=False, encoding="utf-8")
-print(f"✅ Proceso finalizado. Total registros cargados en odds_data.csv: {len(df)}")
+print(f"✅ Total partidos guardados en odds_data.csv: {len(df)}")
