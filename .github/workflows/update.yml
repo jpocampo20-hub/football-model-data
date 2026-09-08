@@ -1,9 +1,9 @@
-name: Actualizar partidos y métricas cuantitativas
+name: Actualizar partidos y metricas cuantitativas
 
 on:
   schedule:
     - cron: "0 6 * * 1"   # Todos los lunes a las 06:00 UTC (~1am / 2am Colombia)
-  workflow_dispatch: {}    # Permite la ejecución manual mediante botón en GitHub
+  workflow_dispatch:      # Permite la ejecucion manual desde el boton en GitHub
 
 permissions:
   contents: write
@@ -12,7 +12,8 @@ jobs:
   fetch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
 
       - name: Configurar entorno de Python
         uses: actions/setup-python@v5
@@ -24,32 +25,32 @@ jobs:
           python -m pip install --upgrade pip
           pip install kaggle soccerdata pandas requests
 
-      - name: Executar script 1: Partidos principales (Ligas Top + Champions)
+      - name: Running script 1 - Partidos principales
         continue-on-error: true
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python fetch_fixtures.py
 
-      - name: Executar script 2: Copas locales y secundarias (FA Cup, Carabao, Copa del Rey, etc.)
+      - name: Running script 2 - Copas locales y Carabao Cup
         continue-on-error: true
         run: python fetch_cups_europe.py
 
-      - name: Executar script 3: Métricas xG individuales por jugador (Kaggle)
+      - name: Running script 3 - Metricas xG individuales
         continue-on-error: true
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: python fetch_xg_stats.py
 
-      - name: Executar script 4: Cuotas de apuestas históricas y de cierre (Odds)
+      - name: Running script 4 - Cuotas de apuestas
         continue-on-error: true
         run: python fetch_odds.py
 
-      - name: Executar script 5: Métricas avanzadas de equipos (Understat - xG, xGA, PPDA)
+      - name: Running script 5 - Metricas avanzadas Understat
         continue-on-error: true
         run: python fetch_understat.py
 
-      - name: Executar script 6: Datos de arbitraje y disciplina (Tarjetas)
+      - name: Running script 6 - Arbitraje y disciplina
         continue-on-error: true
         run: python fetch_sharp_features.py
 
@@ -58,7 +59,6 @@ jobs:
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
           
-          # Agregar cada uno de los CSVs generados al área de preparación de Git
           for f in fixtures.csv cups_europe.csv player_stats_xg.csv odds_data.csv understat_metrics.csv referees_stats.csv; do
             if [ -f "$f" ]; then 
               git add "$f"
@@ -66,7 +66,6 @@ jobs:
             fi
           done
           
-          # Confirmar cambios y enviar al repositorio
-          git commit -m "Actualización automática de datos cuantitativos $(date +%F)" || echo "No se detectaron cambios nuevos en los datos."
+          git commit -m "Actualización automatica de datos $(date +%F)" || echo "No se detectaron cambios nuevos."
           git pull --rebase origin main
           git push
