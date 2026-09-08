@@ -1,9 +1,9 @@
-name: Actualizar partidos
+name: Actualizar partidos y métricas cuantitativas
 
 on:
   schedule:
-    - cron: "0 6 * * 1"   # todos los lunes 06:00 UTC (~1am Colombia)
-  workflow_dispatch: {}    # permite correrlo manual con el botón
+    - cron: "0 6 * * 1"   # Todos los lunes a las 06:00 UTC (~1am / 2am Colombia)
+  workflow_dispatch: {}    # Permite la ejecución manual mediante botón en GitHub
 
 permissions:
   contents: write
@@ -14,39 +14,59 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - name: Configurar entorno de Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.11"
 
       - name: Instalar dependencias requeridas
         run: |
           python -m pip install --upgrade pip
-          pip install kaggle soccerdata pandas
+          pip install kaggle soccerdata pandas requests
 
-      - name: Bajar partidos (5 ligas + Champions League)
+      - name: Executar script 1: Partidos principales (Ligas Top + Champions)
         continue-on-error: true
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python fetch_fixtures.py
 
-      - name: Bajar copas domesticas y Europa League
+      - name: Executar script 2: Copas locales y secundarias (FA Cup, Carabao, Copa del Rey, etc.)
         continue-on-error: true
         run: python fetch_cups_europe.py
 
-      - name: Bajar stats con xG (Kaggle)
+      - name: Executar script 3: Métricas xG individuales por jugador (Kaggle)
         continue-on-error: true
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: python fetch_xg_stats.py
 
-      - name: Guardar cambios
+      - name: Executar script 4: Cuotas de apuestas históricas y de cierre (Odds)
+        continue-on-error: true
+        run: python fetch_odds.py
+
+      - name: Executar script 5: Métricas avanzadas de equipos (Understat - xG, xGA, PPDA)
+        continue-on-error: true
+        run: python fetch_understat.py
+
+      - name: Executar script 6: Datos de arbitraje y disciplina (Tarjetas)
+        continue-on-error: true
+        run: python fetch_sharp_features.py
+
+      - name: Guardar y sincronizar todos los CSVs en GitHub
         run: |
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
-          for f in fixtures.csv cups_europe.csv player_stats_xg.csv; do
-            if [ -f "$f" ]; then git add "$f"; fi
+          
+          # Agregar cada uno de los CSVs generados al área de preparación de Git
+          for f in fixtures.csv cups_europe.csv player_stats_xg.csv odds_data.csv understat_metrics.csv referees_stats.csv; do
+            if [ -f "$f" ]; then 
+              git add "$f"
+              echo "Añadido $f al commit."
+            fi
           done
-          git commit -m "Actualizar datos $(date +%F)" || echo "sin cambios nuevos"
+          
+          # Confirmar cambios y enviar al repositorio
+          git commit -m "Actualización automática de datos cuantitativos $(date +%F)" || echo "No se detectaron cambios nuevos en los datos."
           git pull --rebase origin main
           git push
