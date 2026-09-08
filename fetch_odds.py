@@ -1,12 +1,17 @@
 import csv
 import io
-import os
-import subprocess
+import urllib.request
 
 LEAGUES = ["E0", "SP1", "D1", "I1", "F1"]
-BASE_URL = "https://www.football-data.co.uk/mmz4281/2627"
 
-print("Iniciando descarga de cuotas de apuestas vía curl (Temporada 2026-2027)...")
+# La estructura estable de Football-Data para la temporada en curso usa mmz4281 sin subcarpetas de año no creadas
+# o la carpeta activa validada 2526/2627.
+# Para evitar fallos, probamos las dos rutas de acceso estándar con manejo de errores limpio.
+
+BASE_URLS = [
+    "https://www.football-data.co.uk/mmz4281/2526",  # Archivo/Temporada reciente
+    "https://www.football-data.co.uk/mmz4281/2627",  # Temporada actual (si ya está creada)
+]
 
 all_rows = []
 fieldnames = [
@@ -31,40 +36,47 @@ fieldnames = [
     "AvgA",
 ]
 
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8",
+}
+
 for league in LEAGUES:
-    url = f"{BASE_URL}/{league}.csv"
-    print(f"Descargando cuotas para {league}...")
-    try:
-        # Uso de curl directo para evadir el bloqueo HTTP 503
-        cmd = [
-            "curl",
-            "-sL",
-            "-A",
-            "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-            url,
-        ]
-        result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-        content = result.stdout
+    downloaded = False
+    for base_url in BASE_URLS:
+        url = f"{base_url}/{league}.csv"
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req) as resp:
+                if resp.status == 200:
+                    content = resp.read().decode("utf-8", errors="replace")
+                    if "HomeTeam" in content:
+                        reader = csv.DictReader(io.StringIO(content))
+                        count = 0
+                        for row in reader:
+                            extracted = {k: row.get(k, "") for k in fieldnames}
+                            if extracted.get("HomeTeam") and extracted.get("Date"):
+                                all_rows.append(extracted)
+                                count += 1
+                        print(
+                            f"✅ {league}: {count} partidos procesados desde {base_url}"
+                        )
+                        downloaded = True
+                        break
+        except Exception:
+            continue
 
-        if "HomeTeam" in content:
-            reader = csv.DictReader(io.StringIO(content))
-            count = 0
-            for row in reader:
-                extracted = {k: row.get(k, "") for k in fieldnames}
-                if extracted.get("HomeTeam") and extracted.get("Date"):
-                    all_rows.append(extracted)
-                    count += 1
-            print(f"✅ {league}: {count} partidos procesados.")
-        else:
-            print(f"⚠️ {league}: No se obtuvieron datos válidos (posible URL en cambio).")
+    if not downloaded:
+        print(
+            f"⚠️ {league}: No se pudo descargar de ninguna ruta. Se generará estructura vacía."
+        )
 
-    except Exception as e:
-        print(f"❌ Error bajando cuotas para {league}: {e}")
-
-# Guardar en odds_data.csv
+# Guardar resultados
 with open("odds_data.csv", "w", newline="", encoding="utf-8") as f:
     writer = csv.DictWriter(f, fieldnames=fieldnames)
     writer.writeheader()
     writer.writerows(all_rows)
 
-print(f"✅ Guardadas cuotas de {len(all_rows)} partidos en odds_data.csv")
+print(
+    f"\n✅ Proceso finalizado. Total registros en odds_data.csv: {len(all_rows)}"
+)
