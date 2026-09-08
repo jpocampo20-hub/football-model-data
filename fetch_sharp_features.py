@@ -6,7 +6,7 @@ import pandas as pd
 LEAGUES = ["E0", "SP1", "D1", "I1", "F1"]
 BASE_URLS = [
     "https://www.football-data.co.uk/mmz4281/2526",
-    "https://www.football-data.co.uk/mmz4281/2627",
+    "https://www.football-data.co.uk/mmz4281/2425",
 ]
 
 print("Iniciando extracción de estadísticas de árbitros...")
@@ -24,7 +24,7 @@ for league in LEAGUES:
         url = f"{base_url}/{league}.csv"
         try:
             req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req) as resp:
+            with urllib.request.urlopen(req, timeout=15) as resp:
                 if resp.status == 200:
                     content = resp.read().decode("utf-8", errors="replace")
                     if "Referee" in content or "HomeTeam" in content:
@@ -33,6 +33,7 @@ for league in LEAGUES:
                         for row in reader:
                             if row.get("HomeTeam") and row.get("Date"):
                                 referee_rows.append({
+                                    "League": league,
                                     "Date": row.get("Date", ""),
                                     "HomeTeam": row.get("HomeTeam", ""),
                                     "AwayTeam": row.get("AwayTeam", ""),
@@ -56,7 +57,6 @@ for league in LEAGUES:
             f"⚠️ {league}: No se obtuvieron datos de árbitros desde ninguna ruta."
         )
 
-# Guardar dataframe
 df_referees = pd.DataFrame(referee_rows)
 df_referees.to_csv("referees_stats.csv", index=False, encoding="utf-8")
 print(
