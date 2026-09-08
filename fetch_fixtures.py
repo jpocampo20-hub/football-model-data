@@ -9,14 +9,14 @@ Necesita la variable de entorno FOOTBALL_DATA_TOKEN (se configura como
 
 Nota: el endpoint correcto para filtrar por fecha es POR LIGA
 (/v4/competitions/{codigo}/matches?dateFrom=...&dateTo=...) -- el endpoint
-generico /v4/matches no acepta un parametro "competitions" para esto
-(daba error 400), segun la documentacion oficial.
+generico /v4/matches no acepta un parametro "competitions" para esto.
 """
 import csv
 import datetime
 import json
 import os
 import time
+import urllib.error
 import urllib.request
 
 TOKEN = os.environ["FOOTBALL_DATA_TOKEN"]
@@ -37,6 +37,10 @@ for comp in COMPETITIONS:
     try:
         with urllib.request.urlopen(req) as resp:
             data = json.load(resp)
+    except urllib.error.HTTPError as e:
+        body = e.read().decode("utf-8", errors="replace")
+        print(f"Error pidiendo {comp}: HTTP {e.code} -- {body}")
+        continue
     except Exception as e:
         print(f"Error pidiendo {comp}: {e}")
         continue
