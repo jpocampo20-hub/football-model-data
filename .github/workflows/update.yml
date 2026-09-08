@@ -21,7 +21,7 @@ jobs:
       - name: Instalar dependencias requeridas
         run: |
           python -m pip install --upgrade pip
-          pip install kaggle
+          pip install kaggle soccerdata pandas
 
       - name: Bajar partidos (5 ligas + Champions League)
         continue-on-error: true
@@ -31,8 +31,6 @@ jobs:
 
       - name: Bajar copas domesticas y Europa League
         continue-on-error: true
-        env:
-          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
         run: python fetch_cups_europe.py
 
       - name: Bajar stats con xG (Kaggle)
