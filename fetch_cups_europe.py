@@ -1,41 +1,96 @@
+import datetime
+import os
 import pandas as pd
-import soccerdata as sd
+import requests
 
-print("Iniciando extracción de copas y torneos locales/europeos...")
+print("Iniciando extracción de copas y partidos europeos...")
 
-# Lista de ligas principales soportadas por el conector FBref de soccerdata
-LEAGUES = ["ENG-Premier League", "ESP-La Liga", "GER-Bundesliga", "ITA-Serie A", "FRA-Ligue 1"]
+matches = []
 
-all_matches = []
-
+# 1. Intentar extracción rápida vía Understat (No requiere FBref ni activa CAPTCHAs de Cloudflare)
 try:
-    # Usamos FBref que es la fuente más estable en soccerdata
-    fbref = sd.FBref(leagues=LEAGUES, seasons="2526")
-    schedule = fbref.read_schedule()
-    
-    if not schedule.empty:
-        schedule = schedule.reset_index()
-        
-        # Filtramos o formateamos los partidos
-        for _, row in schedule.iterrows():
-            all_matches.append({
-                "league": row.get("league", ""),
-                "season": row.get("season", ""),
-                "game_id": row.get("game_id", ""),
+    import soccerdata as sd
+
+    understat = sd.Understat(
+        leagues=[
+            "ENG-Premier League",
+            "ESP-La Liga",
+            "GER-Bundesliga",
+            "ITA-Serie A",
+            "FRA-Ligue 1",
+        ],
+        seasons="2026",
+    )
+    schedule = understat.read_schedule().reset_index()
+
+    for _, row in schedule.iterrows():
+        matches.append(
+            {
+                "competition": row.get("league", ""),
                 "date": str(row.get("date", "")),
                 "home_team": row.get("home_team", ""),
                 "away_team": row.get("away_team", ""),
-                "score": row.get("score", ""),
-                "notes": row.get("notes", "")
-            })
+                "home_score": row.get("home_g", ""),
+                "away_score": row.get("away_g", ""),
+                "status": "FINISHED"
+                if pd.notnull(row.get("home_g"))
+                else "SCHEDULED",
+            }
+        )
 
-    df_cups = pd.DataFrame(all_matches)
+    df_cups = pd.DataFrame(matches)
     df_cups.to_csv("cups_europe.csv", index=False, encoding="utf-8")
-    print(f"✅ Guardados {len(df_cups)} partidos en cups_europe.csv")
+    print(f"✅ Guardados {len(df_cups)} partidos en cups_europe.csv (Understat)")
 
 except Exception as e:
-    print(f"⚠️ Error al consultar soccerdata: {e}")
-    # Garantizar que el CSV contenga la estructura correcta aunque falle la red
-    df_fallback = pd.DataFrame(columns=["league", "season", "game_id", "date", "home_team", "away_team", "score", "notes"])
-    df_fallback.to_csv("cups_europe.csv", index=False, encoding="utf-8")
-    print("✅ Creado cups_europe.csv con estructura base para evitar fallos en el pipeline.")
+    print(f"⚠️ Understat no disponible o con formato distinto: {e}")
+
+    # 2. Respaldo directo a feed JSON público (Evita Cloudflare por completo)
+    try:
+        url = "https://raw.githubusercontent.com/openfootball/football.json/master/2026-27/en.1.json"
+        res = requests.get(url, timeout=10)
+        if res.status_code == 200:
+            data = res.json()
+            for round_data in data.get("rounds", []):
+                for m in round_data.get("matches", []):
+                    matches.append(
+                        {
+                            "competition": data.get("name", "European Cup"),
+                            "date": m.get("date", ""),
+                            "home_team": m.get("team1", ""),
+                            "away_team": m.get("team2", ""),
+                            "home_score": m.get("score", {})
+                            .get("ft", [None, None])[0]
+                            if m.get("score")
+                            else "",
+                            "away_score": m.get("score", {})
+                            .get("ft", [None, None])[1]
+                            if m.get("score")
+                            else "",
+                            "status": "FINISHED"
+                            if m.get("score")
+                            else "SCHEDULED",
+                        }
+                    )
+
+        df_cups = pd.DataFrame(matches)
+        df_cups.to_csv("cups_europe.csv", index=False, encoding="utf-8")
+        print(
+            f"✅ Guardados {len(df_cups)} partidos en cups_europe.csv vía Feed JSON"
+        )
+
+    except Exception as e2:
+        print(f"❌ Error en el respaldo de feed JSON: {e2}")
+        # Estructura base para no romper los pasos posteriores del workflow
+        pd.DataFrame(
+            columns=[
+                "competition",
+                "date",
+                "home_team",
+                "away_team",
+                "status",
+                "home_score",
+                "away_score",
+            ]
+        ).to_csv("cups_europe.csv", index=False)
+        print("✅ Generado cups_europe.csv vacío con estructura válida.")
