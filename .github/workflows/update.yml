@@ -31,7 +31,7 @@ jobs:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python fetch_fixtures.py
 
-       - name: Running script 2 - Europa League, Conference League y copas
+      - name: Running script 2 - Europa League, Conference League y copas
         continue-on-error: true
         run: python fetch_european_cups.py
 
