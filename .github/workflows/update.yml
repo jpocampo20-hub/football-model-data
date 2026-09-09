@@ -48,12 +48,16 @@ jobs:
         continue-on-error: true
         run: python fetch_understat.py
 
+      - name: Running script 6 - Elo en vivo (ClubElo)
+        continue-on-error: true
+        run: python fetch_clubelo.py
+
       - name: Guardar y sincronizar todos los CSVs en GitHub
         run: |
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
 
-          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv; do
+          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv clubelo_current.csv; do
             if [ -f "$f" ]; then
               git add "$f"
               echo "Añadido $f al commit."
