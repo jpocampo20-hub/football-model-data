@@ -23,13 +23,17 @@ jobs:
       - name: Instalar dependencias requeridas
         run: |
           python -m pip install --upgrade pip
-          pip install kaggle soccerdata pandas requests
+          pip install kaggle soccerdata pandas requests lxml
 
       - name: Running script 1 - Partidos principales
         continue-on-error: true
         env:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python fetch_fixtures.py
+
+       - name: Running script 2 - Europa League, Conference League y copas
+        continue-on-error: true
+        run: python fetch_european_cups.py
 
       - name: Running script 3 - Metricas xG individuales
         continue-on-error: true
@@ -57,7 +61,7 @@ jobs:
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
 
-          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv clubelo_current.csv; do
+          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv clubelo_current.csv european_cups.csv; do
             if [ -f "$f" ]; then
               git add "$f"
               echo "Añadido $f al commit."
