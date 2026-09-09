@@ -12,7 +12,7 @@ LEAGUES = [
 ]
 
 try:
-    understat = sd.Understat(leagues=LEAGUES, seasons="2025")
+    understat = sd.Understat(leagues=LEAGUES, seasons=["2025", "2026"])
 
     match_data = understat.read_team_match_stats()
 
