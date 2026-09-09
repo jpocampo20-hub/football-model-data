@@ -33,6 +33,8 @@ jobs:
 
       - name: Running script 2 - Copas locales y Carabao Cup
         continue-on-error: true
+        env:
+          APIFOOTBALL_KEY: ${{ secrets.APIFOOTBALL_KEY }}
         run: python fetch_cups_europe.py
 
       - name: Running script 3 - Metricas xG individuales
@@ -44,6 +46,8 @@ jobs:
 
       - name: Running script 4 - Cuotas de apuestas
         continue-on-error: true
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python fetch_odds.py
 
       - name: Running script 5 - Metricas avanzadas Understat
@@ -58,14 +62,14 @@ jobs:
         run: |
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
-          
+
           for f in fixtures.csv cups_europe.csv player_stats_xg.csv odds_data.csv understat_metrics.csv referees_stats.csv; do
-            if [ -f "$f" ]; then 
+            if [ -f "$f" ]; then
               git add "$f"
               echo "Añadido $f al commit."
             fi
           done
-          
+
           git commit -m "Actualización automatica de datos $(date +%F)" || echo "No se detectaron cambios nuevos."
           git pull --rebase origin main
           git push
