@@ -1,38 +1,88 @@
-import pandas as pd
-import soccerdata as sd
+"""
+Copas domesticas + Europa League / Conference League, via API-Football
+(api-sports.io) -- football-data.org no las cubre.
+Busca cada competencia por nombre (con alternativas) en vez de asumir un ID.
+"""
+import csv
+import datetime
+import json
+import os
+import time
+import urllib.error
+import urllib.request
 
-print("Iniciando extracción de partidos y métricas avanzadas (Understat)...")
+API_KEY = os.environ["APIFOOTBALL_KEY"]
+BASE = "https://v3.football.api-sports.io"
+HEADERS = {"x-apisports-key": API_KEY}
 
-LEAGUES = [
-    "ENG-Premier League",
-    "ESP-La Liga",
-    "GER-Bundesliga",
-    "ITA-Serie A",
-    "FRA-Ligue 1",
+# cada entrada es (nombre_para_mostrar, [nombres alternativos a probar en la API])
+COMPETITIONS = [
+    ("FA Cup", ["FA Cup"]),
+    ("EFL Cup (Carabao Cup)", ["EFL Cup", "Carabao Cup", "League Cup"]),
+    ("Copa del Rey", ["Copa del Rey"]),
+    ("DFB Pokal", ["DFB Pokal", "DFB-Pokal"]),
+    ("Coppa Italia", ["Coppa Italia"]),
+    ("Coupe de France", ["Coupe de France"]),
+    ("UEFA Europa League", ["UEFA Europa League"]),
+    ("UEFA Europa Conference League", ["UEFA Europa Conference League"]),
 ]
 
-matches = []
+SEASON = 2026
+date_from = (datetime.date.today() - datetime.timedelta(days=45)).isoformat()
+date_to = (datetime.date.today() + datetime.timedelta(days=21)).isoformat()
 
-try:
-    # Understat consulta APIs JSON directamente y no sufre bloqueos de Cloudflare
-    understat = sd.Understat(leagues=LEAGUES, seasons="2025")
-    schedule = understat.read_schedule().reset_index()
 
-    for _, row in schedule.iterrows():
-        matches.append({
-            "competition": row.get("league", ""),
-            "date": str(row.get("date", "")),
-            "home_team": row.get("home_team", ""),
-            "away_team": row.get("away_team", ""),
-            "home_score": row.get("home_g", ""),
-            "away_score": row.get("away_g", ""),
-            "status": "FINISHED" if pd.notnull(row.get("home_g")) else "SCHEDULED",
+def api_get(path, params):
+    query = "&".join(f"{k}={v}" for k, v in params.items())
+    url = f"{BASE}/{path}?{query}"
+    req = urllib.request.Request(url, headers=HEADERS)
+    try:
+        with urllib.request.urlopen(req) as resp:
+            return json.load(resp)
+    except urllib.error.HTTPError as e:
+        print(f"Error HTTP {e.code} pidiendo {path}: {e.read().decode('utf-8', errors='replace')[:300]}")
+        return None
+    except Exception as e:
+        print(f"Error pidiendo {path}: {e}")
+        return None
+
+
+def find_league_id(alt_names):
+    for name in alt_names:
+        data = api_get("leagues", {"name": name.replace(" ", "%20"), "season": SEASON})
+        if data and data.get("response"):
+            return data["response"][0]["league"]["id"]
+    return None
+
+
+rows = []
+for display_name, alt_names in COMPETITIONS:
+    league_id = find_league_id(alt_names)
+    if league_id is None:
+        print(f"No se encontro competencia '{display_name}'")
+        continue
+    time.sleep(1)
+
+    data = api_get("fixtures", {"league": league_id, "season": SEASON, "from": date_from, "to": date_to})
+    if not data:
+        continue
+
+    for m in data.get("response", []):
+        rows.append({
+            "competition": display_name,
+            "date": m["fixture"]["date"][:10],
+            "home_team": m["teams"]["home"]["name"],
+            "away_team": m["teams"]["away"]["name"],
+            "status": m["fixture"]["status"]["short"],
+            "home_score": m["goals"]["home"],
+            "away_score": m["goals"]["away"],
+            "referee": m["fixture"].get("referee") or "",
         })
+    time.sleep(1)
 
-    df_cups = pd.DataFrame(matches)
-    df_cups.to_csv("cups_europe.csv", index=False, encoding="utf-8")
-    print(f"✅ Guardados {len(df_cups)} partidos en cups_europe.csv")
+with open("cups_europe.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=["competition", "date", "home_team", "away_team", "status", "home_score", "away_score", "referee"])
+    writer.writeheader()
+    writer.writerows(rows)
 
-except Exception as e:
-    print(f"⚠️ Error al obtener partidos de Understat: {e}")
-    pd.DataFrame(columns=["competition", "date", "home_team", "away_team", "status", "home_score", "away_score"]).to_csv("cups_europe.csv", index=False)
+print(f"Guardados {len(rows)} partidos en cups_europe.csv")
