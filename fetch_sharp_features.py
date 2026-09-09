@@ -1,96 +1,105 @@
+"""
+Arbitros y tarjetas por partido, via el mismo API interno de ESPN (sin key).
+Primero saca la lista de partidos jugados de cada liga, luego pide el
+resumen de cada uno para sacar arbitro + tarjetas.
+"""
 import csv
-import io
+import datetime
+import json
+import time
 import urllib.request
-import pandas as pd
 
-print("Iniciando extracción de árbitros y tarjetas (Búsqueda dinámica)...")
+BASE = "https://site.api.espn.com/apis/site/v2/sports/soccer"
 
-LEAGUES_MAP = {
-    "E0": "Premier League",
-    "SP1": "La Liga",
-    "D1": "Bundesliga",
-    "I1": "Serie A",
-    "F1": "Ligue 1",
-}
-
-# Probamos las rutas espejo conocidas en orden de más reciente a más antigua
-# El código se detiene en la primera que responda 200 OK exitosamente
-URL_PATTERNS = [
-    "https://raw.githubusercontent.com/football-data/data/master/{code}.csv",
-    "https://raw.githubusercontent.com/datasets/football-data/master/data/{code}.csv",
-    "https://www.football-data.co.uk/mmz4281/2526/{code}.csv",
-    "https://www.football-data.co.uk/mmz4281/2425/{code}.csv",
+LEAGUES = [
+    ("Premier League", "eng.1"),
+    ("La Liga", "esp.1"),
+    ("Bundesliga", "ger.1"),
+    ("Serie A", "ita.1"),
+    ("Ligue 1", "fra.1"),
 ]
 
-headers = {"User-Agent": "Mozilla/5.0"}
-referee_rows = []
+date_from = (datetime.date.today() - datetime.timedelta(days=45)).strftime("%Y%m%d")
+date_to = (datetime.date.today() + datetime.timedelta(days=21)).strftime("%Y%m%d")
 
-for league_code, league_name in LEAGUES_MAP.items():
-    success = False
-    for pattern in URL_PATTERNS:
-        url = pattern.format(code=league_code)
-        try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                if resp.status == 200:
-                    content = resp.read().decode("utf-8", errors="replace")
-                    reader = csv.DictReader(io.StringIO(content))
-                    count = 0
-                    for row in reader:
-                        r = {
-                            k.strip().lower(): v.strip()
-                            for k, v in row.items()
-                            if k
-                        }
-                        referee = r.get("referee", "")
-                        home_team = r.get("hometeam", "")
+HEADERS = {"User-Agent": "Mozilla/5.0"}
 
-                        if home_team:
-                            referee_rows.append({
-                                "League": league_name,
-                                "Date": r.get("date", ""),
-                                "HomeTeam": home_team,
-                                "AwayTeam": r.get("awayteam", ""),
-                                "Referee": referee if referee else "Desconocido",
-                                "YellowCards_Home": r.get("hy", "0"),
-                                "YellowCards_Away": r.get("ay", "0"),
-                                "RedCards_Home": r.get("hr", "0"),
-                                "RedCards_Away": r.get("ar", "0"),
-                                "Fouls_Home": r.get("hf", "0"),
-                                "Fouls_Away": r.get("af", "0"),
-                            })
-                            count += 1
-                    if count > 0:
-                        print(
-                            f"✅ {league_name}: {count} partidos procesados desde {url}"
-                        )
-                        success = True
-                        break
-        except Exception:
+
+def get_json(url):
+    try:
+        req = urllib.request.Request(url, headers=HEADERS)
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            return json.load(resp)
+    except Exception as e:
+        print(f"⚠️ Error pidiendo {url}: {e}")
+        return None
+
+
+def stat_value(stats, name):
+    for s in stats or []:
+        if s.get("name") == name:
+            return s.get("displayValue", "")
+    return ""
+
+
+rows = []
+for league_name, slug in LEAGUES:
+    sb = get_json(f"{BASE}/{slug}/scoreboard?dates={date_from}-{date_to}&limit=100")
+    if not sb:
+        continue
+
+    finished = [
+        ev for ev in sb.get("events", [])
+        if ev.get("competitions", [{}])[0].get("status", {}).get("type", {}).get("completed")
+    ]
+    print(f"{league_name}: {len(finished)} partidos jugados en la ventana")
+
+    for ev in finished:
+        event_id = ev.get("id")
+        summary = get_json(f"{BASE}/{slug}/summary?event={event_id}")
+        time.sleep(0.3)
+        if not summary:
             continue
 
-    if not success:
-        print(f"⚠️ {league_name}: No se pudo obtener datos de ninguna fuente.")
+        comp = ev.get("competitions", [{}])[0]
+        competitors = comp.get("competitors", [])
+        home_c = next((c for c in competitors if c.get("homeAway") == "home"), {})
+        away_c = next((c for c in competitors if c.get("homeAway") == "away"), {})
+        home_id = home_c.get("team", {}).get("id")
+        away_id = away_c.get("team", {}).get("id")
 
-df_referees = pd.DataFrame(referee_rows)
-if df_referees.empty:
-    df_referees = pd.DataFrame(
-        columns=[
-            "League",
-            "Date",
-            "HomeTeam",
-            "AwayTeam",
-            "Referee",
-            "YellowCards_Home",
-            "YellowCards_Away",
-            "RedCards_Home",
-            "RedCards_Away",
-            "Fouls_Home",
-            "Fouls_Away",
-        ]
-    )
+        officials = summary.get("gameInfo", {}).get("officials", [])
+        referee = officials[0].get("fullName", "") if officials else ""
 
-df_referees.to_csv("referees_stats.csv", index=False, encoding="utf-8")
-print(
-    f"✅ Total registros guardados en referees_stats.csv: {len(df_referees)}"
-)
+        home_stats = away_stats = []
+        for t in summary.get("boxscore", {}).get("teams", []):
+            tid = t.get("team", {}).get("id")
+            if tid == home_id:
+                home_stats = t.get("statistics", [])
+            elif tid == away_id:
+                away_stats = t.get("statistics", [])
+
+        rows.append({
+            "League": league_name,
+            "Date": ev.get("date", "")[:10],
+            "HomeTeam": home_c.get("team", {}).get("displayName", ""),
+            "AwayTeam": away_c.get("team", {}).get("displayName", ""),
+            "Referee": referee,
+            "YellowCards_Home": stat_value(home_stats, "yellowCards"),
+            "YellowCards_Away": stat_value(away_stats, "yellowCards"),
+            "RedCards_Home": stat_value(home_stats, "redCards"),
+            "RedCards_Away": stat_value(away_stats, "redCards"),
+            "Fouls_Home": stat_value(home_stats, "foulsCommitted"),
+            "Fouls_Away": stat_value(away_stats, "foulsCommitted"),
+        })
+
+with open("referees_stats.csv", "w", newline="", encoding="utf-8") as f:
+    writer = csv.DictWriter(f, fieldnames=[
+        "League", "Date", "HomeTeam", "AwayTeam", "Referee",
+        "YellowCards_Home", "YellowCards_Away", "RedCards_Home", "RedCards_Away",
+        "Fouls_Home", "Fouls_Away",
+    ])
+    writer.writeheader()
+    writer.writerows(rows)
+
+print(f"Total registros guardados en referees_stats.csv: {len(rows)}")
