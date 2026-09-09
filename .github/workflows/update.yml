@@ -23,7 +23,7 @@ jobs:
       - name: Instalar dependencias requeridas
         run: |
           python -m pip install --upgrade pip
-          pip install kaggle soccerdata pandas requests lxml
+          pip install kaggle soccerdata pandas requests lxml beautifulsoup4
 
       - name: Running script 1 - Partidos principales
         continue-on-error: true
