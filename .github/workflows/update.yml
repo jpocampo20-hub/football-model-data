@@ -56,12 +56,27 @@ jobs:
         continue-on-error: true
         run: python fetch_clubelo.py
 
+      - name: Running script 7 - Valor de plantilla historico (una sola vez)
+        # Descarga el historial de valor de plantilla 2023-2026 (dataset
+        # congelado desde jul-2026, no cambia) para poder correr el backtest.
+        # Se deja corriendo cada lunes por simplicidad (no rompe nada, el
+        # resultado va a ser identico semana a semana) -- si preferis no
+        # gastar minutos de Actions en esto, borra este step despues de la
+        # primera corrida exitosa (revisa en el log que haya dicho "Guardado
+        # squad_value_history.csv...").
+        continue-on-error: true
+        run: python fetch_squad_value_history.py
+
+      - name: Running script 8 - Valor de plantilla actual (footballwhispers)
+        continue-on-error: true
+        run: python fetch_squad_values_current.py
+
       - name: Guardar y sincronizar todos los CSVs en GitHub
         run: |
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
 
-          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv clubelo_current.csv european_cups.csv; do
+          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv clubelo_current.csv european_cups.csv squad_value_history.csv squad_values_current.csv; do
             if [ -f "$f" ]; then
               git add "$f"
               echo "Añadido $f al commit."
