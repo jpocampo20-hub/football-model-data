@@ -1,7 +1,3 @@
-"""
-Tercer script del robot: métricas avanzadas (xG) de las 5 ligas principales,
-via la librería soccerdata (Understat). No necesita ninguna key.
-"""
 import pandas as pd
 import soccerdata as sd
 
@@ -41,4 +37,28 @@ try:
             "away_points",
         ]
 
-        existing_cols = [c
+        existing_cols = [c for c in columns_to_keep if c in df_metrics.columns]
+        df_final = df_metrics[existing_cols]
+
+        df_final.to_csv("understat_metrics.csv", index=False, encoding="utf-8")
+        print(
+            f"✅ Guardadas {len(df_final)} filas con métricas xG en understat_metrics.csv"
+        )
+    else:
+        print("⚠️ No se encontraron partidos jugados con métricas de xG.")
+
+except Exception as e:
+    print(f"⚠️ Error extrayendo métricas de Understat: {e}")
+
+    fallback_cols = [
+        "league",
+        "season",
+        "date",
+        "home_team",
+        "away_team",
+        "home_goals",
+        "away_goals",
+        "home_xg",
+        "away_xg",
+    ]
+    pd.DataFrame(columns=fallback_cols).to_csv("understat_metrics.csv", index=False)
