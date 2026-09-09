@@ -1,141 +1,150 @@
 """
-Descarga resultados y calendario de Europa League, Conference League y las
-5 copas domesticas top (FA Cup, Copa del Rey, DFB-Pokal, Coppa Italia,
-Coupe de France) desde FBref.
+Descarga el calendario/resultados de la fase de liga de UEFA Europa League y
+UEFA Conference League desde Wikipedia.
 
-Por que FBref y no football-data.org: football-data.org (que ya usamos en
-fetch_fixtures.py para PL/PD/BL1/SA/FL1/CL) NO incluye estas competencias
-en su plan gratuito -- exigen el plan "Standard" (49 EUR/mes) o superior.
-FBref las publica gratis y sin login, asi que el costo es cero, a cambio
-de un scraping mas fragil (si FBref cambia el HTML de la pagina, este
-script puede romper -- por eso el bloque try/except por competencia, igual
-que en fetch_fixtures.py).
+Por que Wikipedia y no FBref: FBref bloquea con 403 el scraping desde IPs
+de nube/GitHub Actions (confirmado en produccion el 2026-09-09 -- ver
+claude/robot-competencias-europeas-y-copas.md -- fallo uniforme en las 7
+competencias, incluso pidiendo robots.txt, señal de bloqueo por IP/bot, no
+de un ID vencido). Wikipedia no bloquea este tipo de trafico.
 
-Guarda TODOS los partidos de estas 7 competencias, incluyendo los que
-involucran clubes que no estan en las 5 ligas top (ej. Zira, Corvinul,
-Kryvbas). Eso es intencional: el objetivo principal de este archivo es
-poder contar descanso/congestion de calendario para CUALQUIER equipo de
-las 5 ligas top que juegue estas competencias, no solo mostrar los
-partidos entre equipos conocidos. El filtro de "solo mostrar cruces entre
-equipos de las 5 ligas top" se aplica despues, en weekly_refresh.py, no
-aqui.
+ALCANCE -- IMPORTANTE: este script reemplaza a fetch_european_cups.py pero
+SOLO cubre Europa League y Conference League (fase de liga). Las 5 copas
+domesticas (FA Cup, Copa del Rey, DFB-Pokal, Coppa Italia, Coupe de
+France) quedaron FUERA a proposito: sus paginas de temporada en Wikipedia
+no tienen resultados, solo un calendario de fechas por ronda -- los
+resultados reales viven en paginas separadas POR RONDA que Wikipedia crea
+a medida que avanza la temporada (ej. "2025-26 FA Cup third round"), lo
+que requiere descubrir el titulo correcto de cada pagina dinamicamente,
+no solo cambiar una URL. Es una tarea aparte, todavia sin construir.
+
+SIN VALIDAR CONTRA HTML REAL -- aviso honesto: el entorno donde se escribio
+este script no pudo alcanzar en.wikipedia.org directamente (bloqueo de red
+del propio sandbox, no de Wikipedia) para confirmar el parseo fila por
+fila contra el HTML real. La estructura de columnas (equipo local /
+marcador / equipo visitante, con menciones de fecha tipo "16 Sep" en
+alguna celda) se confirmo por una herramienta de lectura de paginas, pero
+no se pudo verificar el HTML crudo. Es decir: PROBAR este script con
+workflow_dispatch y revisar el european_cups.csv real generado antes de
+confiar en el, exactamente igual que se hizo con la version de FBref que
+fallo. Si el numero de partidos encontrados es 0 o muy bajo, o las fechas
+salen vacias, avisar con el log completo para ajustar el parser contra
+datos reales en vez de seguir adivinando.
+
+Usa la API de Wikipedia (action=parse) en vez de scrapear la pagina
+renderizada directamente -- es el uso que la propia Wikipedia recomienda
+para consumo programatico.
 """
-
 import csv
-import io
 import re
 import time
+from datetime import date
 
-import pandas as pd
 import requests
-
-# id de FBref (fbref.com/en/comps/<id>/...) -- verificados en fbref.com en 2026-09.
-# Si alguno deja de funcionar (0 partidos guardados para esa competencia),
-# lo mas probable es que FBref haya reasignado el id -- buscar
-# "fbref.com <nombre competencia> scores fixtures" para encontrar el nuevo.
-COMPETITIONS = [
-    {"id": 19, "code": "EL", "name": "Europa League"},
-    {"id": 882, "code": "UECL", "name": "Conference League"},
-    {"id": 514, "code": "FAC", "name": "FA Cup"},
-    {"id": 569, "code": "CDR", "name": "Copa del Rey"},
-    {"id": 521, "code": "DFB", "name": "DFB-Pokal"},
-    {"id": 529, "code": "CI", "name": "Coppa Italia"},
-    {"id": 518, "code": "CDF", "name": "Coupe de France"},
-]
+from bs4 import BeautifulSoup
 
 HEADERS = {
-    # FBref bloquea o devuelve paginas incompletas a clientes sin
-    # User-Agent de navegador real.
-    "User-Agent": (
-        "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
-        "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
-    )
+    "User-Agent": "bet-model-bot/1.0 (contacto: jp.ocampo20@gmail.com) python-requests",
 }
 
-# Codigo de pais de 2-3 letras que FBref pega al final del nombre del
-# equipo (viene del icono de bandera). Se remueve con regex generico.
-_FLAG_SUFFIX_RE = re.compile(r"\s+[a-z]{2,3}$")
+COMPETITIONS = [
+    {"code": "EL", "name": "UEFA Europa League"},
+    {"code": "UECL", "name": "UEFA Europa Conference League"},
+]
 
-# Formatos de marcador que vienen de FBref:
-#   "2–1"          -> partido normal
-#   "(4) 1–1 (5)"  -> empate que se definio por penales (guardamos el
-#                      marcador de los 90+30 min, NO el de penales)
-_SCORE_RE = re.compile(r"(?:\(\d+\)\s*)?(\d+)\s*[–‒-]\s*(\d+)(?:\s*\(\d+\))?")
-
-
-def strip_flag(name: str) -> str:
-    if not isinstance(name, str):
-        return name
-    return _FLAG_SUFFIX_RE.sub("", name).strip()
+_MATCHDAY_RE = re.compile(r"Matchday\s+(\d+)", re.IGNORECASE)
+_SCORE_RE = re.compile(r"^\s*(\d+)\s*[-–]\s*(\d+)\s*$")
+_DATE_RE = re.compile(
+    r"^\s*\d{1,2}\s+(Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\w*\.?"
+    r"(\s+\d{4})?\s*$", re.IGNORECASE,
+)
 
 
-def parse_score(raw):
-    if not isinstance(raw, str) or not raw.strip() or raw.strip() in ("—", "-"):
-        return None, None
-    m = _SCORE_RE.search(raw)
-    if not m:
-        return None, None
-    return int(m.group(1)), int(m.group(2))
+def season_str(ref=None):
+    """Temporada europea 'YYYY-YY+1' con guion largo, como titula Wikipedia
+    (ej. '2026-27'). Misma convencion que SEASON_CUTOFF en weekly_refresh.py:
+    julio en adelante ya es la temporada que empieza ese año."""
+    ref = ref or date.today()
+    start = ref.year if ref.month >= 7 else ref.year - 1
+    return f"{start}–{str(start + 1)[2:]}"
 
 
-def fetch_competition(comp):
-    url = f"https://fbref.com/en/comps/{comp['id']}/schedule/"
-    resp = requests.get(url, headers=HEADERS, timeout=20)
+def fetch_page_html(title):
+    resp = requests.get(
+        "https://en.wikipedia.org/w/api.php",
+        params={"action": "parse", "page": title, "format": "json", "prop": "text", "redirects": 1},
+        headers=HEADERS, timeout=20,
+    )
     resp.raise_for_status()
-    tables = pd.read_html(io.StringIO(resp.text))
-    # La tabla de calendario es la que tiene columnas Date/Home/Away/Score.
-    sched = None
-    for t in tables:
-        cols = [str(c) for c in t.columns]
-        if "Date" in cols and "Home" in cols and "Away" in cols:
-            sched = t
-            break
-    if sched is None:
-        raise ValueError("no se encontro la tabla de calendario (Date/Home/Away)")
+    data = resp.json()
+    if "error" in data:
+        raise ValueError(f"Wikipedia API error: {data['error']}")
+    return data["parse"]["text"]["*"]
 
+
+def parse_league_phase(html, comp_code, season):
+    """Recorre el HTML en orden de documento: cada vez que encuentra un
+    encabezado 'Matchday N', toma la(s) tabla(s) siguientes como los
+    partidos de esa jornada, hasta el proximo encabezado de matchday.
+    Dentro de cada fila, ubica la celda de marcador ("2-1") para anclar
+    equipo local/visitante a su lado, y busca por separado una celda con
+    forma de fecha ("16 Sep") en cualquier posicion de la fila -- no asume
+    un numero fijo de columnas porque no se pudo confirmar contra HTML
+    real (ver aviso arriba)."""
+    soup = BeautifulSoup(html, "html.parser")
     rows = []
-    for _, r in sched.iterrows():
-        date = r.get("Date")
-        if not isinstance(date, str) or not date.strip():
-            continue  # filas de separador de ronda sin fecha
-        home = strip_flag(r.get("Home"))
-        away = strip_flag(r.get("Away"))
-        round_name = r.get("Round", "")
-        hs, as_ = parse_score(r.get("Score"))
-        status = "FINISHED" if hs is not None else "SCHEDULED"
-        rows.append({
-            "competition": comp["code"],
-            "round": round_name,
-            "date": date,
-            "home_team": home,
-            "away_team": away,
-            "status": status,
-            "home_score": hs,
-            "away_score": as_,
-        })
+    current_matchday = None
+
+    for el in soup.find_all(["h2", "h3", "h4", "table"]):
+        if el.name in ("h2", "h3", "h4"):
+            m = _MATCHDAY_RE.search(el.get_text())
+            current_matchday = int(m.group(1)) if m else current_matchday
+            continue
+        if el.name != "table" or current_matchday is None:
+            continue
+        for tr in el.find_all("tr"):
+            cells = [c.get_text(strip=True) for c in tr.find_all(["td", "th"])]
+            if len(cells) < 3:
+                continue
+            score_idx = next((i for i, c in enumerate(cells) if _SCORE_RE.match(c)), None)
+            if score_idx is None or score_idx == 0 or score_idx == len(cells) - 1:
+                continue
+            home, away = cells[score_idx - 1], cells[score_idx + 1]
+            if not home or not away or home.lower() in ("home", "team 1") or away.lower() in ("away", "team 2"):
+                continue
+            date_str = next((c for c in cells if _DATE_RE.match(c)), None)
+            sm = _SCORE_RE.match(cells[score_idx])
+            rows.append({
+                "competition": comp_code, "round": f"Matchday {current_matchday}",
+                "date": f"{date_str} {season.split('–')[0]}" if date_str else None,
+                "home_team": home, "away_team": away,
+                "status": "FINISHED", "home_score": int(sm.group(1)), "away_score": int(sm.group(2)),
+            })
     return rows
 
 
 def main():
+    season = season_str()
     all_rows = []
     for comp in COMPETITIONS:
+        title = f"{season} {comp['name']}".replace(" ", "_")
         try:
-            rows = fetch_competition(comp)
+            html = fetch_page_html(title)
+            rows = parse_league_phase(html, comp["code"], season)
+            n_with_date = sum(1 for r in rows if r["date"])
             all_rows.extend(rows)
-            print(f"OK {comp['name']}: {len(rows)} partidos.")
+            print(f"OK {comp['name']} ({title}): {len(rows)} partidos con marcador, {n_with_date} con fecha reconocida.")
         except Exception as e:
-            print(f"Error pidiendo {comp['name']} (id {comp['id']}): {e}")
-        time.sleep(4)  # cortesia con FBref -- evitar bloqueo por rate-limit
+            print(f"Error pidiendo {comp['name']} ({title}): {e}")
+        time.sleep(2)
 
     with open("european_cups.csv", "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
-            f,
-            fieldnames=["competition", "round", "date", "home_team", "away_team",
-                        "status", "home_score", "away_score"],
+            f, fieldnames=["competition", "round", "date", "home_team", "away_team",
+                           "status", "home_score", "away_score"],
         )
         writer.writeheader()
         writer.writerows(all_rows)
-
     print(f"Guardados {len(all_rows)} partidos en european_cups.csv")
 
 
