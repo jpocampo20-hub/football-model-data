@@ -15,7 +15,6 @@ API_KEY = os.environ["APIFOOTBALL_KEY"]
 BASE = "https://v3.football.api-sports.io"
 HEADERS = {"x-apisports-key": API_KEY}
 
-# cada entrada es (nombre_para_mostrar, [nombres alternativos a probar en la API])
 COMPETITIONS = [
     ("FA Cup", ["FA Cup"]),
     ("EFL Cup (Carabao Cup)", ["EFL Cup", "Carabao Cup", "League Cup"]),
@@ -38,13 +37,19 @@ def api_get(path, params):
     req = urllib.request.Request(url, headers=HEADERS)
     try:
         with urllib.request.urlopen(req) as resp:
-            return json.load(resp)
+            data = json.load(resp)
     except urllib.error.HTTPError as e:
         print(f"Error HTTP {e.code} pidiendo {path}: {e.read().decode('utf-8', errors='replace')[:300]}")
         return None
     except Exception as e:
         print(f"Error pidiendo {path}: {e}")
         return None
+
+    errors = data.get("errors")
+    if errors:
+        print(f"⚠️ La API respondio 200 pero con error interno pidiendo {path}: {errors}")
+        return None
+    return data
 
 
 def find_league_id(alt_names):
