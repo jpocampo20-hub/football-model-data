@@ -1,9 +1,3 @@
-"""
-Cuarto script del robot: cuotas de mercado reales via the-odds-api.com.
-
-Necesita la variable de entorno ODDS_API_KEY (Secret de GitHub) -- se
-consigue gratis en https://the-odds-api.com (plan free, ~500 peticiones/mes).
-"""
 import json
 import os
 import urllib.request
@@ -48,3 +42,20 @@ for sport in sports:
                     "Div": sport["code"],
                     "Date": commence_time[:10] if commence_time else "",
                     "Time": commence_time[11:19] if commence_time else "",
+                    "HomeTeam": home_team,
+                    "AwayTeam": away_team,
+                    "B365H": b365_h,
+                    "B365D": b365_d,
+                    "B365A": b365_a,
+                })
+                count += 1
+            print(f"✅ {sport['name']}: {count} partidos con cuotas reales cargados.")
+    except Exception as e:
+        print(f"⚠️ Error consultando cuotas de {sport['name']}: {e}")
+
+df = pd.DataFrame(all_odds)
+if df.empty:
+    df = pd.DataFrame(columns=["Div", "Date", "Time", "HomeTeam", "AwayTeam", "B365H", "B365D", "B365A"])
+
+df.to_csv("odds_data.csv", index=False, encoding="utf-8")
+print(f"✅ Total partidos guardados en odds_data.csv: {len(df)}")
