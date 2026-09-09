@@ -13,7 +13,7 @@ sports = [
     {"key": "soccer_france_ligue_one", "code": "F1", "name": "Ligue 1"}
 ]
 
-API_KEY = os.environ["ODDS_API_KEY"]
+API_KEY = os.environ["ODDS_API_KEY"].strip()
 all_odds = []
 
 for sport in sports:
