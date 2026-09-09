@@ -47,8 +47,6 @@ from datetime import date
 import pandas as pd
 import numpy as np
 
-import name_map_fd_org as nm  # reusa el mismo mapeo de nombres del proyecto
-
 LEAGUE_URLS = {
     "Premier League": "https://www.footballwhispers.com/uk/team-value/premier-league",
     "La Liga": "https://www.footballwhispers.com/uk/team-value/la-liga",
@@ -111,15 +109,15 @@ def fetch_league(league, url):
         print(f"ERROR: no se identifico columna de valor en {league} -- revisar columnas arriba.", file=sys.stderr)
         return pd.DataFrame(columns=["league", "team", "squad_value_eur_m"])
 
+    # OJO: "team" aca es el nombre CRUDO de footballwhispers, sin traducir a
+    # nuestro nombre corto interno -- ese mapeo se hace en weekly_refresh.py,
+    # que es quien conoce la convencion de team_snapshot. Este script no
+    # depende de ningun modulo de mapeo del proyecto "Bet" (no vive en este repo).
     out = pd.DataFrame({
         "league": league,
-        "team_raw": df[team_col],
+        "team": df[team_col],
         "squad_value_eur_m": df[value_col].map(parse_value_to_eur_m),
     })
-    out["team"] = out["team_raw"].map(nm.to_short_name)
-    unmapped = out.loc[out["team"].isna(), "team_raw"].tolist()
-    if unmapped:
-        print(f"AVISO [{league}]: sin mapeo de nombre para {unmapped}", file=sys.stderr)
     return out.dropna(subset=["team", "squad_value_eur_m"])[["league", "team", "squad_value_eur_m"]]
 
 
