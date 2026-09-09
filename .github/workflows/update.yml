@@ -31,10 +31,6 @@ jobs:
           FOOTBALL_DATA_TOKEN: ${{ secrets.FOOTBALL_DATA_TOKEN }}
         run: python fetch_fixtures.py
 
-      - name: Running script 2 - Copas locales y Europa League
-        continue-on-error: true
-        run: python fetch_cups_europe.py
-
       - name: Running script 3 - Metricas xG individuales
         continue-on-error: true
         env:
@@ -52,16 +48,12 @@ jobs:
         continue-on-error: true
         run: python fetch_understat.py
 
-      - name: Running script 6 - Arbitraje y disciplina
-        continue-on-error: true
-        run: python fetch_sharp_features.py
-
       - name: Guardar y sincronizar todos los CSVs en GitHub
         run: |
           git config user.name "bet-model-bot"
           git config user.email "bot@users.noreply.github.com"
 
-          for f in fixtures.csv cups_europe.csv player_stats_xg.csv odds_data.csv understat_metrics.csv referees_stats.csv; do
+          for f in fixtures.csv player_stats_xg.csv odds_data.csv understat_metrics.csv; do
             if [ -f "$f" ]; then
               git add "$f"
               echo "Añadido $f al commit."
