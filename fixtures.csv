@@ -1,14 +1,4 @@
 competition,date,home_team,away_team,status,home_score,away_score
-PL,2026-08-21,Arsenal FC,Coventry City FC,FINISHED,3,0
-PL,2026-08-22,Hull City AFC,Manchester United FC,FINISHED,2,0
-PL,2026-08-22,Ipswich Town FC,Sunderland AFC,FINISHED,2,1
-PL,2026-08-22,Nottingham Forest FC,Leeds United FC,FINISHED,0,1
-PL,2026-08-22,Everton FC,Crystal Palace FC,FINISHED,2,0
-PL,2026-08-22,Brentford FC,Tottenham Hotspur FC,FINISHED,3,0
-PL,2026-08-23,Manchester City FC,AFC Bournemouth,FINISHED,2,1
-PL,2026-08-23,Brighton & Hove Albion FC,Aston Villa FC,FINISHED,4,0
-PL,2026-08-23,Newcastle United FC,Liverpool FC,FINISHED,2,2
-PL,2026-08-24,Fulham FC,Chelsea FC,FINISHED,2,3
 PL,2026-08-28,Crystal Palace FC,Manchester City FC,FINISHED,1,4
 PL,2026-08-29,Liverpool FC,Nottingham Forest FC,FINISHED,2,2
 PL,2026-08-29,AFC Bournemouth,Everton FC,FINISHED,1,1
@@ -49,15 +39,15 @@ PL,2026-09-20,AFC Bournemouth,Liverpool FC,FINISHED,0,1
 PL,2026-09-20,Leeds United FC,Crystal Palace FC,FINISHED,0,0
 PL,2026-09-20,Manchester City FC,Sunderland AFC,FINISHED,5,3
 PL,2026-09-20,Fulham FC,Manchester United FC,FINISHED,1,1
-PL,2026-10-10,Arsenal FC,Leeds United FC,TIMED,,
-PL,2026-10-10,Sunderland AFC,Brighton & Hove Albion FC,TIMED,,
-PL,2026-10-10,Chelsea FC,AFC Bournemouth,TIMED,,
-PL,2026-10-10,Ipswich Town FC,Fulham FC,TIMED,,
-PL,2026-10-10,Aston Villa FC,Brentford FC,TIMED,,
-PL,2026-10-10,Manchester United FC,Tottenham Hotspur FC,TIMED,,
-PL,2026-10-11,Hull City AFC,Everton FC,TIMED,,
-PL,2026-10-11,Crystal Palace FC,Nottingham Forest FC,TIMED,,
-PL,2026-10-11,Liverpool FC,Manchester City FC,TIMED,,
+PL,2026-10-10,Arsenal FC,Leeds United FC,FINISHED,2,1
+PL,2026-10-10,Sunderland AFC,Brighton & Hove Albion FC,FINISHED,0,2
+PL,2026-10-10,Chelsea FC,AFC Bournemouth,FINISHED,5,1
+PL,2026-10-10,Ipswich Town FC,Fulham FC,FINISHED,2,1
+PL,2026-10-10,Aston Villa FC,Brentford FC,FINISHED,2,2
+PL,2026-10-10,Manchester United FC,Tottenham Hotspur FC,FINISHED,1,1
+PL,2026-10-11,Hull City AFC,Everton FC,FINISHED,2,2
+PL,2026-10-11,Crystal Palace FC,Nottingham Forest FC,FINISHED,3,1
+PL,2026-10-11,Liverpool FC,Manchester City FC,FINISHED,0,3
 PL,2026-10-12,Coventry City FC,Newcastle United FC,TIMED,,
 PL,2026-10-17,Everton FC,Chelsea FC,TIMED,,
 PL,2026-10-17,Fulham FC,Hull City AFC,TIMED,,
@@ -79,19 +69,16 @@ PL,2026-10-25,Crystal Palace FC,Newcastle United FC,TIMED,,
 PL,2026-10-25,Manchester United FC,AFC Bournemouth,TIMED,,
 PL,2026-10-25,Hull City AFC,Brentford FC,TIMED,,
 PL,2026-10-25,Sunderland AFC,Leeds United FC,TIMED,,
-PD,2026-08-21,Real Betis Balompié,Real Sociedad de Fútbol,FINISHED,1,0
-PD,2026-08-22,Athletic Club,Sevilla FC,FINISHED,1,3
-PD,2026-08-22,Valencia CF,RC Celta de Vigo,FINISHED,0,0
-PD,2026-08-22,RCD Espanyol de Barcelona,Real Madrid CF,FINISHED,1,2
-PD,2026-08-23,Club Atlético de Madrid,Villarreal CF,FINISHED,2,2
-PD,2026-08-23,Getafe CF,Real Racing Club de Santander,FINISHED,1,0
-PD,2026-08-23,Elche CF,FC Barcelona,FINISHED,0,5
-PD,2026-08-24,CA Osasuna,Levante UD,FINISHED,0,0
-PD,2026-08-24,Málaga CF,RC Deportivo La Coruña,FINISHED,1,1
-PD,2026-08-25,Valencia CF,Real Betis Balompié,FINISHED,0,1
-PD,2026-08-26,Real Madrid CF,Real Sociedad de Fútbol,FINISHED,4,1
-PD,2026-08-27,RC Celta de Vigo,CA Osasuna,FINISHED,1,2
-PD,2026-08-27,FC Barcelona,Athletic Club,FINISHED,2,0
+PL,2026-10-31,Chelsea FC,Manchester United FC,TIMED,,
+PL,2026-10-31,Manchester City FC,Brighton & Hove Albion FC,TIMED,,
+PL,2026-10-31,AFC Bournemouth,Leeds United FC,TIMED,,
+PL,2026-10-31,Coventry City FC,Sunderland AFC,TIMED,,
+PL,2026-10-31,Hull City AFC,Ipswich Town FC,TIMED,,
+PL,2026-10-31,Brentford FC,Nottingham Forest FC,TIMED,,
+PL,2026-10-31,Tottenham Hotspur FC,Crystal Palace FC,TIMED,,
+PL,2026-10-31,Aston Villa FC,Fulham FC,TIMED,,
+PL,2026-11-01,Liverpool FC,Arsenal FC,TIMED,,
+PL,2026-11-02,Newcastle United FC,Everton FC,TIMED,,
 PD,2026-08-28,Real Racing Club de Santander,Elche CF,FINISHED,3,2
 PD,2026-08-28,Deportivo Alavés,Villarreal CF,FINISHED,1,0
 PD,2026-08-29,Levante UD,Real Betis Balompié,FINISHED,5,2
@@ -141,11 +128,11 @@ PD,2026-09-20,Club Atlético de Madrid,Real Madrid CF,FINISHED,2,1
 PD,2026-09-20,RC Deportivo La Coruña,Real Betis Balompié,FINISHED,1,1
 PD,2026-09-20,Villarreal CF,Levante UD,FINISHED,3,1
 PD,2026-09-20,Valencia CF,Real Sociedad de Fútbol,FINISHED,2,3
-PD,2026-10-09,Málaga CF,RCD Espanyol de Barcelona,TIMED,,
-PD,2026-10-10,Rayo Vallecano de Madrid,Athletic Club,TIMED,,
-PD,2026-10-10,Deportivo Alavés,Club Atlético de Madrid,TIMED,,
-PD,2026-10-10,FC Barcelona,Getafe CF,TIMED,,
-PD,2026-10-10,Real Madrid CF,Villarreal CF,TIMED,,
+PD,2026-10-09,Málaga CF,RCD Espanyol de Barcelona,FINISHED,1,1
+PD,2026-10-10,Rayo Vallecano de Madrid,Athletic Club,CANCELLED,0,0
+PD,2026-10-10,Deportivo Alavés,Club Atlético de Madrid,FINISHED,1,2
+PD,2026-10-10,FC Barcelona,Getafe CF,FINISHED,3,0
+PD,2026-10-10,Real Madrid CF,Villarreal CF,FINISHED,1,0
 PD,2026-10-11,Elche CF,RC Celta de Vigo,TIMED,,
 PD,2026-10-11,Real Sociedad de Fútbol,RC Deportivo La Coruña,TIMED,,
 PD,2026-10-11,Real Betis Balompié,CA Osasuna,TIMED,,
@@ -172,6 +159,16 @@ PD,2026-10-25,RC Celta de Vigo,Real Betis Balompié,TIMED,,
 PD,2026-10-25,Real Sociedad de Fútbol,Levante UD,TIMED,,
 PD,2026-10-25,FC Barcelona,Real Madrid CF,TIMED,,
 PD,2026-10-26,Sevilla FC,CA Osasuna,TIMED,,
+PD,2026-10-30,Villarreal CF,RCD Espanyol de Barcelona,TIMED,,
+PD,2026-10-31,Levante UD,Club Atlético de Madrid,TIMED,,
+PD,2026-10-31,Rayo Vallecano de Madrid,RC Celta de Vigo,TIMED,,
+PD,2026-10-31,Real Betis Balompié,Málaga CF,TIMED,,
+PD,2026-10-31,FC Barcelona,Deportivo Alavés,TIMED,,
+PD,2026-11-01,Getafe CF,Sevilla FC,TIMED,,
+PD,2026-11-01,Real Racing Club de Santander,Real Madrid CF,TIMED,,
+PD,2026-11-01,Elche CF,Valencia CF,TIMED,,
+PD,2026-11-01,Athletic Club,Real Sociedad de Fútbol,TIMED,,
+PD,2026-11-02,RC Deportivo La Coruña,CA Osasuna,TIMED,,
 BL1,2026-08-28,FC Bayern München,VfB Stuttgart,FINISHED,5,1
 BL1,2026-08-29,RB Leipzig,Borussia Mönchengladbach,FINISHED,3,0
 BL1,2026-08-29,1. FSV Mainz 05,SC Paderborn 07,FINISHED,0,0
@@ -208,15 +205,15 @@ BL1,2026-09-19,VfB Stuttgart,Borussia Dortmund,FINISHED,0,1
 BL1,2026-09-20,Bayer 04 Leverkusen,RB Leipzig,FINISHED,2,0
 BL1,2026-09-20,FC Schalke 04,SV 07 Elversberg,FINISHED,0,0
 BL1,2026-09-20,SC Paderborn 07,TSG 1899 Hoffenheim,FINISHED,3,1
-BL1,2026-10-09,Borussia Dortmund,SV Werder Bremen,TIMED,,
-BL1,2026-10-10,1. FSV Mainz 05,Bayer 04 Leverkusen,TIMED,,
-BL1,2026-10-10,SC Paderborn 07,VfB Stuttgart,TIMED,,
-BL1,2026-10-10,1. FC Union Berlin,SV 07 Elversberg,TIMED,,
-BL1,2026-10-10,TSG 1899 Hoffenheim,Hamburger SV,TIMED,,
-BL1,2026-10-10,FC Augsburg,FC Bayern München,TIMED,,
-BL1,2026-10-10,RB Leipzig,Eintracht Frankfurt,TIMED,,
-BL1,2026-10-11,1. FC Köln,Borussia Mönchengladbach,TIMED,,
-BL1,2026-10-11,SC Freiburg,FC Schalke 04,TIMED,,
+BL1,2026-10-09,Borussia Dortmund,SV Werder Bremen,FINISHED,2,2
+BL1,2026-10-10,1. FSV Mainz 05,Bayer 04 Leverkusen,FINISHED,3,4
+BL1,2026-10-10,SC Paderborn 07,VfB Stuttgart,FINISHED,0,2
+BL1,2026-10-10,1. FC Union Berlin,SV 07 Elversberg,FINISHED,1,0
+BL1,2026-10-10,TSG 1899 Hoffenheim,Hamburger SV,FINISHED,2,3
+BL1,2026-10-10,FC Augsburg,FC Bayern München,FINISHED,2,2
+BL1,2026-10-10,RB Leipzig,Eintracht Frankfurt,FINISHED,6,0
+BL1,2026-10-11,1. FC Köln,Borussia Mönchengladbach,FINISHED,2,1
+BL1,2026-10-11,SC Freiburg,FC Schalke 04,FINISHED,2,1
 BL1,2026-10-16,Eintracht Frankfurt,1. FC Köln,TIMED,,
 BL1,2026-10-17,1. FC Union Berlin,Borussia Dortmund,TIMED,,
 BL1,2026-10-17,Hamburger SV,VfB Stuttgart,TIMED,,
@@ -235,16 +232,15 @@ BL1,2026-10-24,FC Augsburg,1. FC Union Berlin,TIMED,,
 BL1,2026-10-24,Borussia Dortmund,Eintracht Frankfurt,TIMED,,
 BL1,2026-10-25,TSG 1899 Hoffenheim,Bayer 04 Leverkusen,TIMED,,
 BL1,2026-10-25,SC Freiburg,FC Bayern München,TIMED,,
-SA,2026-08-22,Udinese Calcio,Como 1907,FINISHED,1,1
-SA,2026-08-22,FC Internazionale Milano,AC Monza,FINISHED,4,1
-SA,2026-08-22,Genoa CFC,SSC Napoli,FINISHED,0,2
-SA,2026-08-22,Parma Calcio 1913,Cagliari Calcio,FINISHED,0,1
-SA,2026-08-23,Frosinone Calcio,Juventus FC,FINISHED,0,1
-SA,2026-08-23,Venezia FC,US Lecce,FINISHED,0,2
-SA,2026-08-23,Atalanta BC,US Sassuolo Calcio,FINISHED,2,1
-SA,2026-08-23,Torino FC,AC Milan,FINISHED,1,2
-SA,2026-08-24,Bologna FC 1909,SS Lazio,FINISHED,0,1
-SA,2026-08-24,AS Roma,ACF Fiorentina,FINISHED,4,0
+BL1,2026-10-30,SV 07 Elversberg,1. FSV Mainz 05,TIMED,,
+BL1,2026-10-31,Borussia Mönchengladbach,SC Paderborn 07,TIMED,,
+BL1,2026-10-31,FC Schalke 04,RB Leipzig,TIMED,,
+BL1,2026-10-31,FC Augsburg,SC Freiburg,TIMED,,
+BL1,2026-10-31,SV Werder Bremen,TSG 1899 Hoffenheim,TIMED,,
+BL1,2026-10-31,Bayer 04 Leverkusen,VfB Stuttgart,TIMED,,
+BL1,2026-10-31,FC Bayern München,Borussia Dortmund,TIMED,,
+BL1,2026-11-01,1. FC Union Berlin,1. FC Köln,TIMED,,
+BL1,2026-11-01,Eintracht Frankfurt,Hamburger SV,TIMED,,
 SA,2026-08-28,AC Milan,Venezia FC,FINISHED,2,0
 SA,2026-08-29,US Sassuolo Calcio,Torino FC,FINISHED,2,1
 SA,2026-08-29,AC Monza,Udinese Calcio,FINISHED,2,3
@@ -285,14 +281,14 @@ SA,2026-09-20,Frosinone Calcio,Como 1907,FINISHED,2,0
 SA,2026-09-20,Parma Calcio 1913,Genoa CFC,FINISHED,2,1
 SA,2026-09-20,Juventus FC,Atalanta BC,FINISHED,2,0
 SA,2026-09-20,AC Milan,US Lecce,FINISHED,3,0
-SA,2026-10-10,Genoa CFC,ACF Fiorentina,TIMED,,
-SA,2026-10-10,FC Internazionale Milano,Parma Calcio 1913,TIMED,,
-SA,2026-10-10,SSC Napoli,Frosinone Calcio,TIMED,,
-SA,2026-10-11,Como 1907,AS Roma,TIMED,,
-SA,2026-10-11,US Lecce,Bologna FC 1909,TIMED,,
-SA,2026-10-11,SS Lazio,AC Monza,TIMED,,
-SA,2026-10-11,US Sassuolo Calcio,AC Milan,TIMED,,
-SA,2026-10-11,Cagliari Calcio,Juventus FC,TIMED,,
+SA,2026-10-10,Genoa CFC,ACF Fiorentina,FINISHED,2,1
+SA,2026-10-10,FC Internazionale Milano,Parma Calcio 1913,FINISHED,3,0
+SA,2026-10-10,SSC Napoli,Frosinone Calcio,FINISHED,3,0
+SA,2026-10-11,Como 1907,AS Roma,FINISHED,0,0
+SA,2026-10-11,US Lecce,Bologna FC 1909,FINISHED,1,2
+SA,2026-10-11,SS Lazio,AC Monza,FINISHED,3,1
+SA,2026-10-11,US Sassuolo Calcio,AC Milan,FINISHED,1,1
+SA,2026-10-11,Cagliari Calcio,Juventus FC,FINISHED,1,1
 SA,2026-10-12,Atalanta BC,Venezia FC,TIMED,,
 SA,2026-10-12,Torino FC,Udinese Calcio,TIMED,,
 SA,2026-10-16,Frosinone Calcio,US Sassuolo Calcio,TIMED,,
@@ -315,15 +311,26 @@ SA,2026-10-25,Atalanta BC,Frosinone Calcio,TIMED,,
 SA,2026-10-25,Genoa CFC,Venezia FC,TIMED,,
 SA,2026-10-25,US Lecce,Juventus FC,TIMED,,
 SA,2026-10-25,Udinese Calcio,AC Milan,TIMED,,
-FL1,2026-08-21,Olympique de Marseille,RC Strasbourg Alsace,FINISHED,4,0
-FL1,2026-08-22,Racing Club de Lens,AJ Auxerre,FINISHED,5,2
-FL1,2026-08-22,Le Mans FC,Stade Brestois 29,FINISHED,2,2
-FL1,2026-08-22,ES Troyes AC,Paris FC,FINISHED,0,0
-FL1,2026-08-22,OGC Nice,FC Lorient,FINISHED,0,0
-FL1,2026-08-22,Toulouse FC,Olympique Lyonnais,FINISHED,0,2
-FL1,2026-08-23,Angers SCO,Lille OSC,FINISHED,0,2
-FL1,2026-08-23,Le Havre AC,AS Monaco FC,FINISHED,0,1
-FL1,2026-08-23,Stade Rennais FC 1901,Paris Saint-Germain FC,FINISHED,2,2
+SA,2026-10-27,US Sassuolo Calcio,SS Lazio,TIMED,,
+SA,2026-10-27,AS Roma,Cagliari Calcio,TIMED,,
+SA,2026-10-27,Torino FC,Como 1907,TIMED,,
+SA,2026-10-28,AC Milan,Bologna FC 1909,TIMED,,
+SA,2026-10-28,Venezia FC,FC Internazionale Milano,TIMED,,
+SA,2026-10-28,Parma Calcio 1913,Udinese Calcio,TIMED,,
+SA,2026-10-28,Genoa CFC,Juventus FC,TIMED,,
+SA,2026-10-28,AC Monza,SSC Napoli,TIMED,,
+SA,2026-10-29,Frosinone Calcio,US Lecce,TIMED,,
+SA,2026-10-29,ACF Fiorentina,Atalanta BC,TIMED,,
+SA,2026-10-31,Bologna FC 1909,AC Monza,TIMED,,
+SA,2026-10-31,Udinese Calcio,AS Roma,TIMED,,
+SA,2026-10-31,AC Milan,FC Internazionale Milano,TIMED,,
+SA,2026-11-01,Como 1907,Venezia FC,TIMED,,
+SA,2026-11-01,Frosinone Calcio,Torino FC,TIMED,,
+SA,2026-11-01,SS Lazio,Cagliari Calcio,TIMED,,
+SA,2026-11-01,US Lecce,Genoa CFC,TIMED,,
+SA,2026-11-01,Juventus FC,SSC Napoli,TIMED,,
+SA,2026-11-02,US Sassuolo Calcio,ACF Fiorentina,TIMED,,
+SA,2026-11-02,Atalanta BC,Parma Calcio 1913,TIMED,,
 FL1,2026-08-28,Lille OSC,Paris Saint-Germain FC,FINISHED,2,2
 FL1,2026-08-29,RC Strasbourg Alsace,Racing Club de Lens,FINISHED,2,1
 FL1,2026-08-29,FC Lorient,ES Troyes AC,FINISHED,1,2
@@ -360,15 +367,15 @@ FL1,2026-09-19,Olympique Lyonnais,Stade Rennais FC 1901,FINISHED,4,0
 FL1,2026-09-20,AJ Auxerre,Stade Brestois 29,FINISHED,2,1
 FL1,2026-09-20,OGC Nice,Lille OSC,FINISHED,2,1
 FL1,2026-09-20,Olympique de Marseille,Paris Saint-Germain FC,FINISHED,1,2
-FL1,2026-10-09,Racing Club de Lens,Olympique Lyonnais,TIMED,,
-FL1,2026-10-10,Lille OSC,Le Havre AC,TIMED,,
-FL1,2026-10-10,Stade Brestois 29,Angers SCO,TIMED,,
-FL1,2026-10-10,FC Lorient,Paris FC,TIMED,,
-FL1,2026-10-10,Paris Saint-Germain FC,Le Mans FC,TIMED,,
-FL1,2026-10-10,AS Monaco FC,Toulouse FC,TIMED,,
-FL1,2026-10-11,OGC Nice,RC Strasbourg Alsace,TIMED,,
-FL1,2026-10-11,Stade Rennais FC 1901,AJ Auxerre,TIMED,,
-FL1,2026-10-11,ES Troyes AC,Olympique de Marseille,TIMED,,
+FL1,2026-10-09,Racing Club de Lens,Olympique Lyonnais,FINISHED,2,1
+FL1,2026-10-10,Lille OSC,Le Havre AC,FINISHED,1,0
+FL1,2026-10-10,Stade Brestois 29,Angers SCO,FINISHED,5,1
+FL1,2026-10-10,FC Lorient,Paris FC,FINISHED,1,0
+FL1,2026-10-10,Paris Saint-Germain FC,Le Mans FC,FINISHED,3,1
+FL1,2026-10-10,AS Monaco FC,Toulouse FC,FINISHED,2,2
+FL1,2026-10-11,OGC Nice,RC Strasbourg Alsace,FINISHED,2,1
+FL1,2026-10-11,Stade Rennais FC 1901,AJ Auxerre,FINISHED,4,1
+FL1,2026-10-11,ES Troyes AC,Olympique de Marseille,FINISHED,0,2
 FL1,2026-10-16,Le Mans FC,Toulouse FC,TIMED,,
 FL1,2026-10-17,RC Strasbourg Alsace,Paris Saint-Germain FC,TIMED,,
 FL1,2026-10-17,ES Troyes AC,Racing Club de Lens,TIMED,,
@@ -387,6 +394,15 @@ FL1,2026-10-25,Stade Rennais FC 1901,RC Strasbourg Alsace,TIMED,,
 FL1,2026-10-25,Angers SCO,FC Lorient,TIMED,,
 FL1,2026-10-25,AJ Auxerre,Le Mans FC,TIMED,,
 FL1,2026-10-25,Paris Saint-Germain FC,Olympique Lyonnais,TIMED,,
+FL1,2026-10-30,Le Havre AC,Paris Saint-Germain FC,TIMED,,
+FL1,2026-10-30,Lille OSC,Racing Club de Lens,TIMED,,
+FL1,2026-10-31,OGC Nice,Stade Rennais FC 1901,TIMED,,
+FL1,2026-10-31,Olympique Lyonnais,Angers SCO,TIMED,,
+FL1,2026-10-31,FC Lorient,Stade Brestois 29,TIMED,,
+FL1,2026-10-31,ES Troyes AC,Le Mans FC,TIMED,,
+FL1,2026-11-01,RC Strasbourg Alsace,AJ Auxerre,TIMED,,
+FL1,2026-11-01,Paris FC,AS Monaco FC,TIMED,,
+FL1,2026-11-01,Olympique de Marseille,Toulouse FC,TIMED,,
 CL,2026-09-08,Club Brugge KV,Aston Villa FC,FINISHED,2,3
 CL,2026-09-08,PAE AEK,LASK Linz,FINISHED,1,0
 CL,2026-09-08,Real Madrid CF,FC Internazionale Milano,FINISHED,2,1
