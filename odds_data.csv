@@ -1,100 +1,73 @@
 Div,Date,Time,HomeTeam,AwayTeam,B365H,B365D,B365A
-E0,2026-10-31,12:30:00,Chelsea,Manchester United,1.83,3.95,4.22
-E0,2026-10-31,15:00:00,Bournemouth,Leeds United,2.12,3.56,3.55
-E0,2026-10-31,15:00:00,Brentford,Nottingham Forest,2.0,3.85,3.63
-E0,2026-10-31,15:00:00,Manchester City,Brighton and Hove Albion,1.68,4.5,4.55
-E0,2026-10-31,15:00:00,Coventry City,Sunderland,3.12,3.37,2.4
-E0,2026-10-31,15:00:00,Hull City,Ipswich Town,2.67,3.45,2.7
-E0,2026-10-31,17:30:00,Tottenham Hotspur,Crystal Palace,1.56,4.65,5.55
-E0,2026-10-31,20:00:00,Aston Villa,Fulham,2.05,3.72,3.6
-E0,2026-11-01,16:30:00,Liverpool,Arsenal,3.08,3.49,2.28
-E0,2026-11-02,20:00:00,Newcastle United,Everton,2.3,3.62,3.04
-E0,2026-11-06,20:00:00,Everton,Coventry City,1.7,3.98,4.74
-E0,2026-11-07,12:30:00,Leeds United,Tottenham Hotspur,2.54,3.37,2.77
-E0,2026-11-07,15:00:00,Arsenal,Hull City,1.15,8.5,21.0
-E0,2026-11-07,15:00:00,Fulham,Newcastle United,2.25,3.6,3.0
-E0,2026-11-07,17:30:00,Nottingham Forest,Manchester City,4.7,4.3,1.71
-E0,2026-11-08,14:00:00,Ipswich Town,Bournemouth,3.7,3.85,1.97
-E0,2026-11-08,14:00:00,Brighton and Hove Albion,Brentford,1.94,4.0,3.7
-E0,2026-11-08,14:00:00,Sunderland,Chelsea,3.4,3.5,2.2
-E0,2026-11-08,14:00:00,Crystal Palace,Liverpool,4.75,4.2,1.71
-E0,2026-11-08,16:30:00,Manchester United,Aston Villa,2.02,3.6,2.95
-E0,2026-11-22,16:30:00,Liverpool,Manchester United,1.68,3.25,4.2
-SP1,2026-10-26,20:00:00,Sevilla,CA Osasuna,1.91,3.46,4.5
-SP1,2026-10-30,20:00:00,Villarreal,Espanyol,1.53,1.13,1.13
-SP1,2026-10-31,13:00:00,Levante,Atlético Madrid,4.9,4.5,1.59
-SP1,2026-10-31,15:15:00,Rayo Vallecano,Celta Vigo,2.34,3.4,3.1
-SP1,2026-10-31,17:30:00,Real Betis,Málaga,1.4,5.48,7.29
-SP1,2026-10-31,20:00:00,Barcelona,Alavés,1.15,7.35,23.0
-SP1,2026-11-01,13:00:00,Getafe,Sevilla,3.2,3.05,2.68
-SP1,2026-11-01,15:15:00,Real Racing Club de Santander,Real Madrid,10.0,7.8,1.27
-SP1,2026-11-01,17:30:00,Elche CF,Valencia,2.58,3.4,2.96
-SP1,2026-11-01,20:00:00,Athletic Bilbao,Real Sociedad,2.22,3.7,3.45
-SP1,2026-11-02,20:00:00,Deportivo La Coruña,CA Osasuna,2.16,3.29,3.67
-SP1,2026-11-06,20:00:00,Sevilla,Alavés,2.1,3.3,3.6
-SP1,2026-11-07,13:00:00,Málaga,Real Racing Club de Santander,2.35,3.6,2.8
-SP1,2026-11-07,15:15:00,Espanyol,Deportivo La Coruña,2.15,3.4,3.3
-SP1,2026-11-07,17:30:00,CA Osasuna,Athletic Bilbao,3.3,3.3,2.2
-SP1,2026-11-07,20:00:00,Valencia,Real Madrid,7.2,5.2,1.37
-SP1,2026-11-08,13:00:00,Elche CF,Real Betis,3.5,3.5,2.05
-SP1,2026-11-08,15:15:00,Real Sociedad,Rayo Vallecano,1.83,3.8,4.0
-SP1,2026-11-08,17:30:00,Celta Vigo,Levante,1.8,3.8,4.1
-SP1,2026-11-08,17:30:00,Villarreal,Getafe,1.5,4.4,6.0
-SP1,2026-11-08,20:00:00,Atlético Madrid,Barcelona,3.7,4.1,1.83
-D1,2026-10-30,19:30:00,Elversberg,FSV Mainz 05,3.25,3.95,2.16
-D1,2026-10-31,14:30:00,Augsburg,SC Freiburg,3.05,3.9,2.24
-D1,2026-10-31,14:30:00,Bayer Leverkusen,VfB Stuttgart,1.83,4.3,3.95
-D1,2026-10-31,14:30:00,Borussia Monchengladbach,SC Paderborn,2.0,4.0,3.6
-D1,2026-10-31,14:30:00,FC Schalke 04,RB Leipzig,4.1,3.75,1.91
-D1,2026-10-31,14:30:00,Werder Bremen,TSG Hoffenheim,2.88,4.0,2.32
-D1,2026-10-31,17:30:00,Bayern Munich,Borussia Dortmund,1.35,5.9,7.6
-D1,2026-11-01,14:30:00,Union Berlin,1. FC Köln,2.46,3.6,2.64
-D1,2026-11-01,16:30:00,Eintracht Frankfurt,Hamburger SV,1.7,4.2,4.5
-D1,2026-11-06,19:30:00,Hamburger SV,Borussia Monchengladbach,1.12,1.72,1.12
-D1,2026-11-07,14:30:00,RB Leipzig,Augsburg,1.44,1.1,1.1
-D1,2026-11-07,14:30:00,FSV Mainz 05,Bayern Munich,1.1,1.1,1.34
-D1,2026-11-07,14:30:00,Borussia Dortmund,Elversberg,1.28,1.1,1.1
-D1,2026-11-07,14:30:00,SC Paderborn,Eintracht Frankfurt,1.1,1.1,2.24
-D1,2026-11-07,17:30:00,VfB Stuttgart,Werder Bremen,1.12,1.1,1.1
-D1,2026-11-08,14:30:00,1. FC Köln,Bayer Leverkusen,1.1,1.1,1.12
-D1,2026-11-08,16:30:00,SC Freiburg,Union Berlin,1.12,1.1,1.1
-D1,2026-11-08,18:30:00,TSG Hoffenheim,FC Schalke 04,1.12,1.1,1.1
-I1,2026-10-27,17:30:00,Sassuolo,Lazio,3.35,3.6,2.2
-I1,2026-10-27,19:45:00,AS Roma,Cagliari,1.36,5.0,10.5
-I1,2026-10-27,19:45:00,Torino,Como,5.0,3.75,1.77
-I1,2026-10-28,17:30:00,AC Milan,Bologna,1.64,4.15,5.6
-I1,2026-10-28,17:30:00,Venezia,Inter Milan,8.15,6.0,1.35
-I1,2026-10-28,17:30:00,Parma,Udinese,3.08,3.15,2.58
-I1,2026-10-28,19:45:00,Genoa,Juventus,5.6,3.8,1.7
-I1,2026-10-28,19:45:00,Monza,Napoli,4.25,4.05,1.83
-I1,2026-10-29,17:30:00,Frosinone,Lecce,1.73,4.15,4.75
-I1,2026-10-29,19:45:00,Fiorentina,Atalanta BC,2.27,3.7,3.15
-I1,2026-10-31,14:00:00,Bologna,Monza,1.73,3.65,4.3
-I1,2026-10-31,17:00:00,Udinese,AS Roma,5.0,4.1,1.57
-I1,2026-10-31,19:45:00,AC Milan,Inter Milan,3.2,3.55,2.04
-I1,2026-11-01,11:30:00,Como,Venezia,1.32,5.4,7.0
-I1,2026-11-01,14:00:00,Lazio,Cagliari,1.54,3.85,5.6
-I1,2026-11-01,14:00:00,Frosinone,Torino,2.16,3.65,2.86
-I1,2026-11-01,17:00:00,Lecce,Genoa,2.62,3.05,2.66
-I1,2026-11-01,19:45:00,Juventus,Napoli,1.77,3.55,4.3
-I1,2026-11-02,17:30:00,Sassuolo,Fiorentina,2.43,3.35,2.5
-I1,2026-11-02,19:45:00,Atalanta BC,Parma,1.43,4.25,6.4
-F1,2026-10-26,19:30:00,Paris Saint Germain,Lyon,1.33,5.5,7.6
-F1,2026-10-30,18:00:00,Le Havre,Paris Saint Germain,10.4,7.2,1.23
-F1,2026-10-30,20:05:00,Lille,RC Lens,2.42,3.57,2.92
-F1,2026-10-31,16:15:00,Nice,Rennes,2.82,3.85,2.38
-F1,2026-10-31,19:45:00,Lyon,Angers,1.41,5.2,7.4
-F1,2026-10-31,19:45:00,Lorient,Brest,2.5,3.45,2.9
-F1,2026-10-31,19:45:00,Troyes,Le Mans FC,2.27,3.56,3.2
-F1,2026-11-01,14:00:00,Strasbourg,Auxerre,1.75,3.85,3.85
-F1,2026-11-01,16:15:00,Paris FC,AS Monaco,2.29,3.68,2.93
-F1,2026-11-01,19:45:00,Marseille,Toulouse,1.88,3.85,3.7
-F1,2026-11-06,19:45:00,Toulouse,Strasbourg,2.02,3.65,3.4
-F1,2026-11-07,16:15:00,Auxerre,Paris FC,3.75,3.75,1.9
-F1,2026-11-07,19:45:00,Paris Saint Germain,Troyes,1.13,8.5,17.5
-F1,2026-11-08,14:00:00,Rennes,Lille,2.0,3.65,3.5
-F1,2026-11-08,16:15:00,Le Mans FC,AS Monaco,4.25,4.15,1.7
-F1,2026-11-08,16:15:00,Angers,Nice,3.35,3.45,2.12
-F1,2026-11-08,16:15:00,Brest,Lyon,2.95,3.7,2.4
-F1,2026-11-08,16:15:00,Le Havre,Lorient,2.68,3.3,2.62
-F1,2026-11-08,19:45:00,RC Lens,Marseille,2.05,3.85,3.2
+E0,2026-11-02,20:00:00,Newcastle United,Everton,2.2,3.62,3.29
+E0,2026-11-06,20:00:00,Everton,Coventry City,1.71,4.03,4.6
+E0,2026-11-07,12:30:00,Leeds United,Tottenham Hotspur,2.54,3.34,2.8
+E0,2026-11-07,15:00:00,Arsenal,Hull City,1.14,8.3,18.0
+E0,2026-11-07,15:00:00,Fulham,Newcastle United,2.13,3.62,3.28
+E0,2026-11-07,17:30:00,Nottingham Forest,Manchester City,4.6,3.98,1.72
+E0,2026-11-08,14:00:00,Ipswich Town,Bournemouth,3.75,3.69,1.92
+E0,2026-11-08,14:00:00,Brighton and Hove Albion,Brentford,1.9,3.88,3.62
+E0,2026-11-08,14:00:00,Sunderland,Chelsea,3.66,3.56,1.97
+E0,2026-11-08,14:00:00,Crystal Palace,Liverpool,4.79,4.18,1.63
+E0,2026-11-08,16:30:00,Manchester United,Aston Villa,2.2,3.68,3.0
+E0,2026-11-21,12:30:00,Manchester City,Fulham,1.37,4.35,5.5
+E0,2026-11-21,15:00:00,Aston Villa,Sunderland,1.95,3.65,4.0
+E0,2026-11-21,15:00:00,Bournemouth,Nottingham Forest,1.72,3.38,3.78
+E0,2026-11-21,15:00:00,Chelsea,Leeds United,1.66,3.5,3.95
+E0,2026-11-21,15:00:00,Coventry City,Crystal Palace,2.08,3.28,2.8
+E0,2026-11-21,15:00:00,Tottenham Hotspur,Ipswich Town,1.6,4.3,5.6
+E0,2026-11-21,17:30:00,Newcastle United,Arsenal,4.75,3.85,1.49
+E0,2026-11-22,14:00:00,Hull City,Brighton and Hove Albion,5.25,4.15,1.42
+E0,2026-11-22,16:30:00,Liverpool,Manchester United,1.79,4.0,4.4
+E0,2026-11-23,20:00:00,Brentford,Everton,1.68,3.5,3.5
+SP1,2026-11-02,20:00:00,Deportivo La Coruña,CA Osasuna,2.18,3.3,3.65
+SP1,2026-11-06,20:00:00,Sevilla,Alavés,1.93,3.5,4.31
+SP1,2026-11-07,13:00:00,Málaga,Real Racing Club de Santander,2.45,3.55,2.9
+SP1,2026-11-07,15:15:00,Espanyol,Deportivo La Coruña,2.18,3.6,3.36
+SP1,2026-11-07,17:30:00,CA Osasuna,Athletic Bilbao,3.35,3.43,2.25
+SP1,2026-11-07,20:00:00,Valencia,Real Madrid,8.5,6.4,1.31
+SP1,2026-11-08,13:00:00,Elche CF,Real Betis,3.3,3.9,2.16
+SP1,2026-11-08,15:15:00,Real Sociedad,Rayo Vallecano,1.77,4.1,4.8
+SP1,2026-11-08,17:30:00,Celta Vigo,Levante,1.82,3.9,4.7
+SP1,2026-11-08,17:30:00,Villarreal,Getafe,1.49,4.5,7.8
+SP1,2026-11-08,20:00:00,Atlético Madrid,Barcelona,3.9,4.5,1.83
+D1,2026-11-06,19:30:00,Hamburger SV,Borussia Monchengladbach,2.41,3.69,2.75
+D1,2026-11-07,14:30:00,RB Leipzig,Augsburg,1.44,5.5,5.75
+D1,2026-11-07,14:30:00,FSV Mainz 05,Bayern Munich,5.15,6.25,1.43
+D1,2026-11-07,14:30:00,Borussia Dortmund,Elversberg,1.29,6.6,9.5
+D1,2026-11-07,14:30:00,SC Paderborn,Eintracht Frankfurt,3.05,3.83,2.17
+D1,2026-11-07,17:30:00,VfB Stuttgart,Werder Bremen,1.53,5.2,5.2
+D1,2026-11-08,14:30:00,1. FC Köln,Bayer Leverkusen,4.28,4.29,1.71
+D1,2026-11-08,16:30:00,SC Freiburg,Union Berlin,1.53,4.44,5.83
+D1,2026-11-08,18:30:00,TSG Hoffenheim,FC Schalke 04,1.64,4.33,4.81
+I1,2026-11-02,17:30:00,Sassuolo,Fiorentina,2.9,3.65,2.43
+I1,2026-11-02,19:45:00,Atalanta BC,Parma,1.53,4.65,6.15
+I1,2026-11-06,19:45:00,Venezia,Udinese,2.16,3.7,3.31
+I1,2026-11-07,14:00:00,Cagliari,Frosinone,2.82,3.75,2.42
+I1,2026-11-07,14:00:00,Torino,Lecce,1.83,3.7,4.55
+I1,2026-11-07,17:00:00,Parma,Bologna,4.65,3.59,1.85
+I1,2026-11-07,19:45:00,AS Roma,Sassuolo,1.35,5.65,8.5
+I1,2026-11-08,11:30:00,Napoli,Lazio,2.11,3.58,3.25
+I1,2026-11-08,14:00:00,Genoa,AC Milan,4.39,3.59,1.81
+I1,2026-11-08,14:00:00,Monza,Atalanta BC,3.22,3.85,2.04
+I1,2026-11-08,17:00:00,Inter Milan,Como,1.78,4.13,3.91
+I1,2026-11-08,19:45:00,Fiorentina,Juventus,3.68,3.62,1.95
+F1,2026-11-02,19:45:00,Lorient,Brest,2.45,3.1,3.0
+F1,2026-11-06,19:45:00,Toulouse,Strasbourg,2.08,3.72,3.33
+F1,2026-11-07,16:15:00,Auxerre,Paris FC,4.2,3.9,1.8
+F1,2026-11-07,19:45:00,Paris Saint Germain,Troyes,1.13,10.0,15.0
+F1,2026-11-08,14:00:00,Rennes,Lille,2.09,3.75,3.29
+F1,2026-11-08,16:15:00,Le Mans FC,AS Monaco,4.28,4.01,1.76
+F1,2026-11-08,16:15:00,Angers,Nice,3.43,3.67,2.06
+F1,2026-11-08,16:15:00,Brest,Lyon,2.9,3.65,2.32
+F1,2026-11-08,16:15:00,Le Havre,Lorient,2.72,3.37,2.6
+F1,2026-11-08,19:45:00,RC Lens,Marseille,2.1,3.91,3.15
+F1,2026-11-20,19:45:00,Troyes,Le Havre,1.98,3.15,2.9
+F1,2026-11-21,16:15:00,Nice,Paris Saint Germain,5.75,4.6,1.33
+F1,2026-11-21,19:45:00,AS Monaco,Auxerre,1.44,5.44,7.3
+F1,2026-11-21,19:45:00,Strasbourg,Brest,2.59,3.9,2.68
+F1,2026-11-21,19:45:00,Lille,Lyon,2.32,3.45,2.85
+F1,2026-11-21,19:45:00,RC Lens,Toulouse,1.86,3.75,3.45
+F1,2026-11-22,14:00:00,Paris FC,Angers,1.29,4.6,6.9
+F1,2026-11-22,16:15:00,Lorient,Rennes,3.2,3.7,2.25
+F1,2026-11-22,19:45:00,Marseille,Le Mans FC,1.29,4.65,6.6
